@@ -1,0 +1,120 @@
+---
+title: "CSS: Hilbijêran (Selectors)"
+---
+
+# **Hilbijêran (Selectors)**
+
+Hilbijêra CSS'ê, hêman(ên) HTML'ê ku hûn dixwazin şêwaz bikin hildibijêre.
+
+Em dikarin hilbijêrên CSS'ê li pênc kategoriyan dabeş bikin:
+
+- Hilbijêrên hêsan (hêmanên li ser bingeha nav, nasname, çîn hilbijêrin)
+- Hilbijêrên hevberker (hêmanên li ser bingeha têkiliyek taybetî ya di navbera wan de hilbijêrin)
+- Hilbijêrên pseudo-çîn (hêmanên li ser bingeha rewşek diyarkirî hilbijêrin)
+- Hilbijêrên pseudo-hêman (perçeyek hêmanek hilbijêrin û şêwaz bikin)
+- Hilbijêrên taybetmendiyê (hêmanên li ser bingeha taybetmendiyek an nirxek taybetmendiyê hilbijêrin)
+
+Ev beş dê hilbijêrên herî bingehîn ên CSS'ê rave bike.
+
+## **Hilbijêra Hêmanan**
+
+Hilbijêra hêmanan, hêmanên HTML'ê li ser bingeha navê hêmanê hildibijêre.
+
+**Mînak:** `<p>`
+
+```css copy showLineNumbers
+p {
+  text-align: center;
+  color: red;
+}
+```
+
+## **Hilbijêra Çînan (class)**
+
+Hilbijêra çînan, hêmanên HTML'ê bi taybetmendiyek çîna taybetî hildibijêre.
+
+Ji bo bijartina hêmanên bi çînek taybetî, karakterek xalê **( . )** binivîsin, li dûv navê çînê.
+
+**Mînak:** `class="center"`
+
+```css copy showLineNumbers
+.center {
+  text-align: center;
+  color: red;
+}
+```
+
+Her weha hûn dikarin diyar bikin ku tenê hêmanên HTML'ê yên taybetî divê ji çînê bandor bibin.
+
+**Mînak:** `<p class="center">`
+
+```css copy showLineNumbers
+p.center {
+  text-align: center;
+  color: red;
+}
+```
+
+## **Hilbijêra Taybetmendiyan (id)**
+
+Hilbijêra taybetmendiya, id'ê ya hêmanek HTML'ê bikar tîne da ku hêmanek taybetî hilbijêrin.
+
+Nasnameya hêmanekê di nav rûpelekê de yekta ye, ji ber vê yekê hilbijêra nasnameyê ji bo hilbijartina yek hêmanek bêhempa tê bikar anîn.
+
+Ji bo bijartina hêmanek bi id'ya taybetî, karakterek hash **( # )** binivîsin, paşê jî id'ya hêmanê.
+
+**Mînak:** `id="pawe"`
+
+```css copy showLineNumbers
+#pawe {
+  text-align: center;
+  color: red;
+}
+```
+
+## **Hilbijêra Gerdûnî**
+
+Hilbijêra gerdûnî (\*) hemî hêmanên HTML'ê yên li ser rûpelê hildibijêre.
+
+```css copy showLineNumbers
+* {
+  text-align: center;
+  color: blue;
+}
+```
+
+## **Hilbijêra Komkirinê**
+
+Hilbijêra komkirinê, hemî hêmanên HTML'ê bi pênaseyên heman şêwazê hildibijêre.
+
+Li koda CSS ya jêrîn binihêrin (hêmanên `h1`, `h2`, û `p` heman pênaseyên şêwazê hene):
+
+```css copy showLineNumbers
+h1 {
+  text-align: center;
+  color: red;
+}
+
+h2 {
+  text-align: center;
+  color: red;
+}
+
+p {
+  text-align: center;
+  color: red;
+}
+```
+
+Dê çêtir be ku hilbijêran kom bikin, kodê kêm bikin.
+
+Ji bo komkirina hilbijêran, her hilbijêrek bi bêhnokê **( , )** veqetînin.
+
+```css copy showLineNumbers
+h1,
+h2,
+p {
+  text-align: center;
+  color: red;
+}
+```

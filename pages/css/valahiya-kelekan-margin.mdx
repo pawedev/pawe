@@ -1,0 +1,99 @@
+---
+title: "CSS: Valahiya Kêlekan (Margin)"
+---
+
+# **Valahiya Kêlekan (Margin)**
+
+Margîn, ji bo afirandina cîhê li dora hêmanan, li derveyî sînorên diyarkirî an jî valahiya kêleka têne bikar anîn.
+
+Taybetmendiyê `margin` têne bikar anîn da ku li derdora hêmanan, li derveyî sînorên diyarkirî valahî biafirînin.
+
+Bi CSS re, hûn li ser margin'an xwedan kontrolek tam in.
+
+Taybetmendiyên danîna marginê ji bo her aliyekî hêmanekê _(jor, rast, jêr û çep)_ hene.
+
+## **Aliyên Margin'ê**
+
+CSS xwedan taybetmendiyên ji bo diyarkirina margin'ê ji bo her aliyekî hêmanekê ye:
+
+- `margin-top`
+- `margin-right`
+- `margin-bottom`
+- `margin-left`
+
+Hemî taybetmendiyên margin dikarin van nirxên jêrîn hebin:
+
+- `auto` - gerok margin'ê hesab dike.
+- `length` - di **px, pt, cm**, hwd de margînek diyar dike.
+- `%` - di % ya firehiya hêmana tê de margînek diyar dike
+- `inherit` - diyar dike ku divê margîn ji hêmana jorîn were mîras kirin
+
+**Nîşe:** Nirxên negatîf têne destûr kirin.
+
+```html copy showLineNumbers
+<style>
+  div {
+    border: 1px solid black;
+    background-color: orange;
+  }
+
+  .valahi {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+  }
+</style>
+
+<div class="valahi">
+  Ev hêmana div xwedan marjîna jorîn 100 px, marjîna rastê 150 px, marjîna jêrîn
+  100 px, û marjîna çepê 80 px ye.
+</div>
+```
+
+## **Kurtenivîsê (margin:)**
+
+Ji bo kurtkirina kodê, gengaz e ku hemî taybetmendiyên margin'ê di yek taybetmendiyê de diyar bike.
+
+Taybetmendî `margin` ji bo taybetmendiyên marginên jêrîn taybetmendiyek kurt e:
+
+- margin-top
+- margin-right
+- margin-bottom
+- margin-left
+
+Ji ber vê yekê, li vir e ku ew çawa dixebite:
+
+Ger `margin` çar nirx hebin: `margin: 25px 50px 75px 100px;`
+
+- margina jorîn 25 px e
+- margina rastê 50 px ye
+- margina jêrîn 75 px e
+- margina çepê 100 px e
+
+```css copy showLineNumbers
+p {
+  margin: 25px 50px 75px 100px;
+}
+```
+
+Ger `margin` du nirx hebin: `margin: 25px 50px;`
+
+- marginên jor û jêr 25 px in
+- marginên rast û çep 50 px in
+
+```css copy showLineNumbers
+p {
+  margin: 25px 50px;
+}
+```
+
+Ger `margin` yek nirx hebe: `margin: 25px;`
+
+- her çar aliyê margin 25 px ne
+
+```css copy showLineNumbers
+p {
+  margin: 25px;
+}
+```

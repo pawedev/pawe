@@ -1,0 +1,117 @@
+---
+title: "HTML: Nasname (ID)"
+---
+
+# **Nasname (ID)**
+
+Taybetmendiya `id` tê bikar anîn ku ji bo hêmanek HTML'ê nasnameyek yekta diyar bike.
+
+Hûn **nikarin** di rûpelek HTML'ê de ji yek hêmanek bi heman nasnameyê bêtir hebin.
+
+Taybetmendiya `id` ji bo nîşankirina stîlek taybetî di nîşana şêwazê de tê bikar anîn.
+
+Di heman demê de ew ji hêla JavaScript'ê ve tê bikar anîn, da ku bi nasnameya taybetî ve bigihîje û manîpulekirina elementê.
+
+**Hevoksaziya "id" ev e:** karakterek hash `#` binivîsin, li pey navek id'ê. Dûv re, taybetmendiyên CSS'ê yên di nav kevanekê xemilî de `{}` diyar bikin.
+
+```css copy showLineNumbers
+#naveid {
+  font-weight: bold;
+}
+```
+
+Di mînaka jêrîn de hêmanek me `<h1>` heye ku navê id **"sernav"** destnîşan dike.
+
+Ev hêmana `<h1>` dê li gorî pênaseya `#sernav` serî de were şêwaz kirin.
+
+```html copy showLineNumbers
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #sernav {
+        background-color: lightblue;
+        color: black;
+        padding: 40px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="sernav">Ev Sernava Bi Nasname ye.</h1>
+  </body>
+</html>
+```
+
+## **Cûdahîya Çîn û Nasnameyê**
+
+Navek çînê dikare ji hêla gelek hêmanên HTML'ê ve were bikar anîn.
+
+Dema ku navek nasnameyê divê tenê ji hêla yek hêmanek HTML'ê ve di nav rûpelê de were bikar anîn.
+
+```html copy showLineNumbers
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Stîla ji bo nasnameyan */
+      #sernav {
+        background-color: lightblue;
+        color: black;
+        padding: 40px;
+        text-align: center;
+      }
+
+      /* Stîla ji bo çînan */
+      .bajar {
+        background-color: purple;
+        color: white;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Cûdahîya Çîn û Nasnameyê</h2>
+
+    <!-- Hêmanek xwedan nasname (ID) -->
+    <h1 id="sernav">Bajarên Me:</h1>
+
+    <!-- Hêmanên çîna (class) hevbeş bikartîne -->
+    <h2 class="bajar">Hewlêr</h2>
+
+    <h2 class="bajar">Mahabad</h2>
+
+    <h2 class="bajar">Hesekê</h2>
+  </body>
+</html>
+```
+
+## **Nasname (ID) û Girêdank**
+
+Hêmanên HTML'ê têne bikar anîn da ku destûr bidin bikarhêneran ku biçin beşên taybetî yên malperê.
+
+Heger rûpela we pir dirêj be, nîşangir dikarin bikêr bin.
+
+Ji bo ku nîşanek bikar bînin, divê hûn pêşî wê biafirînin, û paşê pêvekek lê zêde bikin.
+
+Dûv re, gava ku zencîre were pêl kirin, rûpel dê li cîhê bi nîşankerê ve biçe.
+
+Pêşî, nîşanek bi taybetmendiyê `id` biafirînin:
+
+```html copy showLineNumbers
+<h2 id="Nasname_Giredank">Beşa Nasname û Girêdank</h2>
+```
+
+Dûv re, ji hundurê heman rûpelê girêdankek destnîşan bikin: **("Biçe Beşa Nasname û Girêdank")**
+
+```html copy showLineNumbers
+<a href="#Nasname_Giredank">Biçe Beşa Nasname û Girêdank</a>
+```
+
+An jî, ji rûpelek din ve girêdankek bi nîşankê ve zêde bikin :
+
+```html copy showLineNumbers
+<a href="index.html#Nasname_Giredank">Biçe Beşa Nasname û Girêdank</a>
+```

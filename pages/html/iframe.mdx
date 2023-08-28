@@ -1,0 +1,65 @@
+---
+title: "HTML: Iframe"
+---
+
+# **Iframe**
+
+Iframe, ji bo nîşankirina rûpelek malperê di nav rûpelek malperê de tê bikar anîn.
+
+Hêmana `<iframe>` çarçoveyek hundurîn ango "iframe" diyar dike.
+
+Çarçoveyek hundurîn tê bikar anîn da ku belgeyek din di nav rûpela HTML ya heyî de bihewîne.
+
+**Hevoksazî:**
+
+```html copy showLineNumbers
+<iframe src="url" title="daxuyani"></iframe>
+```
+
+## **Bilindahî û Firehî**
+
+Taybetmendiyên `height` û `width` bikar bînin da ku mezinahiya iframe'ê diyar bikin.
+
+Bilindahî û firehî ji hêla xwerû ve di pixelan de têne destnîşan kirin:
+
+```html copy showLineNumbers
+<iframe src="/html" height="200" width="300" title="Rêzedersên HTML'ê"></iframe>
+```
+
+## **Sînor Jêbirin**
+
+Ji hêla xwerû, iframeyek li dora wê sînorek heye.
+
+Ji bo rakirina sînor, taybetmendiyê `style` zêde bikin û taybetmendiya CSS `border:` bikar bînin:
+
+```html copy showLineNumbers
+<iframe
+  src="/javascript"
+  style="border:none;"
+  title="Rêzedersên JavaScript'ê"
+></iframe>
+```
+
+## **Girêdank û Iframe**
+
+Iframe dikare wekî çarçoveyek ji bo girêdankek were bikar anîn.
+
+Pêdivî ye ku taybetmendiya girêdanê `target` bi taybetmendiya iframe `name` vegere:
+
+```html copy showLineNumbers
+<iframe
+  src="https://pawe.dev"
+  name="iframe_yek"
+  title="Pawe"
+  height="300px"
+  width="100%"
+></iframe>
+
+<ul>
+  <li><a href="https://pawe.dev/html" target="iframe_yek">HTML</a></li>
+  <li><a href="https://pawe.dev/css" target="iframe_yek">CSS</a></li>
+  <li>
+    <a href="https://pawe.dev/javascript" target="iframe_yek">JavaScript</a>
+  </li>
+</ul>
+```

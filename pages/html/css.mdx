@@ -1,0 +1,164 @@
+---
+title: "HTML: Bikaranîna Kodên CSS'ê"
+---
+
+# **Bikaranîna Kodên CSS'ê**
+
+CSS tê wateya **Rûpelên Şêwazan Raxistî** *Cascading Style Sheets*.
+
+CSS gelek kar xilas dike û ew dikare sêwirana _(dîzayn)_ çend rûpelên malperê bi yekcarî kontrol bike.
+
+Ji bo formatkirina sêwirana malperek tê bikar anîn.
+
+Bi CSS re, hûn dikarin reng, tîp, mezinahiya nivîsê, cihêbûna di navbera hêmanan de, hêman çawa têne danîn, kîjan wêneyên paşîn an rengên paşîn têne bikar anîn, dîmenên cihêreng ên ji bo cîhazên cihêreng û mezinahiyên ekranê dikarin diyar bikin.
+
+## **Bikaranîna CSS'ê**
+
+**CSS dikare bi 3 awayan li rûpelên HTML'ê tên danîn:**
+
+**Navrêzî:** bi karanîna taybetmendiyê `style` di hundurê hêmanên HTML'ê de.
+
+**Navxweyî:** bi karanîna hêmana `<style>` di nava hêmana `<head>` de.
+
+**Derveyî:** bi karanîna hêmana `<link>` ji bo girêdana pelê CSS'ya derveyî.
+
+Bikaranîna herî gelemperî ji bo lê zêdekirina CSS, ev e ku şêwazên di pelên CSS yên derveyî bi danînê ye.
+
+Lêbelê, di vê dersê de em ê şêwazên Navrêzî û Navxweyî bikar bînin, ji ber ku ev hêsantir e ku meriv xwe nîşan bide, û ji we re hêsantir e ku hûn bi xwe biceribînin.
+
+## **CSS'ê Navrêzî *(Inline CSS)***
+
+CSS'ê ya navrêzî tê bikar anîn, da ku stîlekê bêhempa li yek hêmanek HTML'ê bicîh bîne.
+
+CSS'ê ya navrêzî bi taybetmendiya `style` ve hêmanek HTML'ê bikar tîne.
+
+Mînaka jêrîn rengê nivîsê ya hêmana `<h1>` şîn, û rengê nivîsê ya hêmanê `<p>` sor dike:
+
+```html copy showLineNumbers
+<h1 style="color:blue;">Ev sernavekê şîn e.</h1>
+
+<p style="color:red;">Ev paragrafekê sor e.</p>
+```
+
+## **CSS'ê Navxweyî *(Internal CSS)***
+
+CSS'ê ya navxweyî, tê bikar anîn ku ji bo yek rûpelek HTML'ê stîlek diyar bike.
+
+Di rûpelê HTML'ê, di nava hêmana `<head>` de bi hêmana `<style>` ve tên destnîşan kirin.
+
+Mînaka jêrîn rengê nivîsê ya HEMÛ hêmanan `<h1>` ê (li ser wê rûpelê) kesk dike, û rengê nivîsê ya HEMÛ hêmanan `<p>` sor dike.
+
+Wekî din, rûpel dê bi rengek paşîn zer were xuyang kirin:
+
+```html copy showLineNumbers
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: yellow;
+      }
+      h1 {
+        color: green;
+      }
+      p {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Rêzedersên HTML'ê</h1>
+    <p>Dersa CSS'ê</p>
+  </body>
+</html>
+```
+
+## **CSS'ê Derveyî *(External CSS)***
+
+Ji bo danasîna stîlê ji bo gelek rûpelên HTML'ê stîlek derveyî tê bikar anîn.
+
+Ji bo ku stîlek derveyî bikar bînin, di nava her rûpelê HTML'ê de di nava hêmana `<head>` de bi hêmana `<link>` ve tên dest nîşan kirin.
+
+**Mînak:** `<link rel="stylesheet" href="navepel.css">`
+
+Stîla derveyî dikare di her tim edîtorê kodê de were nivîsandin.
+
+Divê di pelê de tu kodek HTML'ê tune be, û divê bi pêveka `.css` were tomarkirin.
+
+```html copy showLineNumbers
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--- Pela CSS'ê Bootstrap (Pîrtûkxane ya CSS'ê) --->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <h1>Pêşxistina Rûpelên Web'ê</h1>
+    <p>HTML5 Fêr Dibim.</p>
+  </body>
+</html>
+```
+
+## **Reng, Tîp û Mezinahîyên Nivîsê - CSS**
+
+Li vir, em ê hin taybetmendiyên CSS yên ku bi gelemperî têne bikar anîn destnîşan bikin.
+
+Hûn ê paşê li "**Rêzedersên CSS'ê**" de bêtir fêr bibin.
+
+Taybetmendiya `color` a CSS'ê, rengê nivîsê ku tên bikar anîn diyar dike.
+
+Taybetmendiya `font-family` a CSS'ê, tîpa nivîsê ku tê bikar anîn diyar dike.
+
+Taybetmendiya `font-size` a CSS'ê, mezinahiya nivîsê ya ku were bikar anîn diyar dike.
+
+```html copy showLineNumbers
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h1 {
+        color: blue;
+        font-family: verdana;
+        font-size: 300%;
+      }
+
+      p {
+        color: red;
+        font-family: courier;
+        font-size: 160%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Ev sernavê vê rûpelê ye.</h1>
+    <p>Ev paragrafek sor e.</p>
+  </body>
+</html>
+```
+
+## **Sînoran - CSS**
+
+Taybetmendiya `border` li dora hêmanek HTML'ê sînorek diyar dike.
+
+Hûn dikarin ji bo hema hema hemî hêmanên HTML'ê sînorek diyar bikin.
+
+```html copy showLineNumbers
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p {
+        border: 2px solid green;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>Ev paragrafek bi sînorkirî ye.</p>
+  </body>
+</html>
+```

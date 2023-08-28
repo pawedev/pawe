@@ -1,0 +1,55 @@
+---
+title: "HTML: Deng (Audio)"
+---
+
+# **Deng (Audio)**
+
+Hêmana `<audio>` ji bo lîstina pelek dengî li ser rûpelek malperê tê bikar anîn.
+
+Ji bo lîstina pelê dengek di HTML-ê de, hêmana `<audio>` bikar bînin.
+
+Taybetmendiya `controls` kontrolên deng, mîna lîstin, sekinîn, û deng zêde dike.
+
+Hêmana `<source>` dihêle hûn pelên dengî yên alternatîf ên ku gerok dikare ji wan hilbijêrin diyar bikin.
+
+Gerok dê yekem formata naskirî bikar bîne.
+
+Nivîsa di navbera `<audio>` û `</audio>` nîşanan de tenê dê di gerokên ku hêmanê `<audio>` piştgirî nakin de were xuyang kirin.
+
+```html copy showLineNumbers
+<audio controls>
+  <source src="pawe.mp3" type="audio/mpeg" />
+  <source src="pawe.ogg" type="audio/ogg" />
+  Geroka we hêmana dengî piştgirî nake.
+</audio>
+```
+
+## **Taybetmendiya "autoplay"**
+
+Ji bo destpêkirina pelek dengî bixweber _(otomatîk)_, taybetmendiyê `autoplay` bikar bînin:
+
+```html copy showLineNumbers
+<audio controls autoplay>
+  <source src="pawe.mp3" type="audio/mpeg" />
+  <source src="pawe.ogg" type="audio/ogg" />
+  Geroka we hêmana dengî piştgirî nake.
+</audio>
+```
+
+## **Taybetmendiya "muted"**
+
+Piştî `muted` lê zêde bike da ku pelê weya **bêdengî** bixweber dest pê bike:
+
+```html copy showLineNumbers
+<audio controls autoplay muted>
+  <source src="pawe.mp3" type="audio/mpeg" />
+  <source src="pawe.ogg" type="audio/ogg" />
+  Geroka we hêmana dengî piştgirî nake.
+</audio>
+```
+
+Sê formatên dengî yên piştgirî hene: MP3, WAV, û OGG.
+
+Di geroka **Safari** de tenê formata **OGG** nayê piştgirî kirin.
+
+Ji bilî wê, hemî formatan di hemî gerokan de têne piştgirî kirin.

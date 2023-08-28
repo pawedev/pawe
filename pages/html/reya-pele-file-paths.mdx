@@ -1,0 +1,63 @@
+---
+title: "HTML: Rêya Pelê (File Paths)"
+---
+
+# **Rêya Pelê (File Paths)**
+
+Rêya pelê, cîhê pelê di nav avahiya peldanka malperê de diyar dike.
+
+Rêyên pelan dema ku bi pelên derveyî ve têne girêdan têne bikar anîn.
+
+**Mînak:**
+
+- Wêneyan
+- Pelên CSS'ê
+- Pelên JavaScript'ê
+
+## **Mînakên Rêya Pelê**
+
+`<img src="wene.jpg">`
+
+Pelê "wene.jpg" di heman peldanka rûpela heyî de ye.
+
+`<img src="images/wene.jpg">`
+
+Pelê "wene.jpg" di peldanka "images" de ye.
+
+`<img src="/images/wene.jpg">`
+
+Pelê "wene.jpg" di peldanka "images" de li ser koka tevna heyî ye.
+
+`<img src="../wene.jpg">`
+
+Pelê "wene.jpg" di peldankê de ji peldanka yek astek jortir e.
+
+## **Rêyên Pelê Bêkemasî _(Absolute)_**
+
+Riya pelê ya bêkêmasî, URL'ya tevahî ya pelê nîşan dike:
+
+```html copy showLineNumbers
+<img src="https://pawe.dev/pawe.jpg" alt="Pawe Pêşvebirin" />
+```
+
+## **Rêyên Pelê Têkildar _(Relative)_**
+
+Rêya pelê ya têkildar, bi pelê re li gorî rûpela heyî nîşan dide.
+
+Di mînaka jêrîn de, riya pelê pelek di peldanka "images" de ku li koka tevna heyî ye nîşan dide:
+
+```html copy showLineNumbers
+<img src="/images/wene.jpg" alt="Ev wene ye." />
+```
+
+Di mînaka jêrîn de, riya pelê pelek di peldanka "images" de ku di peldanka heyî de ye nîşan dide:
+
+```html copy showLineNumbers
+<img src="images/wene.jpg" alt="Ev wene ye." />
+```
+
+Di mînaka jêrîn de, riya pelê pelek di peldanka "images" de ku di peldankê de yek astek ji peldanka heyî ye nîşan dide:
+
+```html copy showLineNumbers
+<img src="../images/wene.jpg" alt="Ev wene ye." />
+```

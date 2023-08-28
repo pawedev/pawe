@@ -1,0 +1,59 @@
+---
+title: "HTML: Vîdeo"
+---
+
+# **Vîdeo**
+
+Hêmana `<video>` tê bikar anîn ku vîdyoyek li ser rûpelek malperê nîşan bide.
+
+Ji bo ku vîdyoyek di HTML-ê de nîşan bide, hêmana `<video>` bikar bînin:
+
+Taybetmendiya `controls` kontrolên vîdyoyê mîna lîstin, sekinandin, û deng xuyang dike.
+
+Her gav di nav xwe de taybetmendiyên `width` û `height` hebe.
+
+Ger bilindî û firehî neyên danîn, dibe ku rûpel dema ku vîdyoyê bar dike bişewite.
+
+Hêman `<source>` dihêle hûn pelên vîdyoyê yên alternatîf ên ku gerok dikare ji wan hilbijêrin diyar bikin.
+
+Gerok dê yekem formata naskirî bikar bîne.
+
+Nivîsa di navbera `<video>` û `</video>` nîşanan de tenê dê di gerokên ku hêmana `<video>` piştgirî nakin de were xuyang kirin.
+
+```html copy showLineNumbers
+<video width="400" height="400" controls>
+  <source src="/pawe.mp4" type="video/mp4" />
+  <source src="/pawe.ogg" type="video/ogg" />
+  Geroka we hêmana vîdyoyê piştgirî nake.
+</video>
+```
+
+## **Taybetmendiya "autoplay"**
+
+Ji bo destpêkirina vîdyoyek bixweber _(otomatîk)_, taybetmendiyê `autoplay` bikar bînin:
+
+```html copy showLineNumbers
+<video width="400" height="400" controls autoplay>
+  <source src="/pawe.mp4" type="video/mp4" />
+  <source src="/pawe.ogg" type="video/ogg" />
+  Geroka we hêmana vîdyoyê piştgirî nake.
+</video>
+```
+
+## **Taybetmendiya "muted"**
+
+Piştî `muted` lê zêde bikin da ku vîdyoya we bixweber dest pê bike (**lê bê deng**):
+
+```html copy showLineNumbers
+<video width="400" height="400" controls autoplay muted>
+  <source src="/pawe.mp4" type="video/mp4" />
+  <source src="/pawe.ogg" type="video/ogg" />
+  Geroka we hêmana vîdyoyê piştgirî nake.
+</video>
+```
+
+Sê formatên vîdyoyê yên piştgirî hene: **MP4**, **WebM**, û **Ogg**.
+
+Di geroka **Safari** de tenê formata **OGG** nayê piştgirî kirin.
+
+Ji bilî wê, hemî formatan di hemî gerokan de têne piştgirî kirin.

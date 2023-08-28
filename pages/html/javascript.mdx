@@ -1,0 +1,44 @@
+---
+title: "HTML: Bikaranîna Kodên JavaScript'ê"
+---
+
+# **Bikaranîna Kodên JavaScript'ê**
+
+JavaScript, rûpelên HTML'ê dînamîk û înteraktîftir dike.
+
+Hêmana `<script>` ê ji bo danasîna kodên JavaScript'ê tê bikar anîn.
+
+Hêmana `<script>` daxuyaniyên kodên JavaScript'ê dihewîne, an jî ew bi taybetmendîya `src` ve pelek JavaScript'ê ya derveyî destnîşan dike.
+
+Bikaranîna hevpar a JavaScript'ê manîpulasyona wêneyê, pejirandina formê, û guhertinên dînamîkî yên naverokê ne.
+
+Ji bo ku hêmanek HTML'ê hilbijêrin, JavaScript pir caran rêbazê `document.getElementById()` bikar tîne.
+
+Em niha mînakên sereke di derbarê JavaScript'ê de didin. Rêzedersên JavaScript'ê de em bi berfirehî vê fêr bibin.
+
+Ev mînaka JavaScriptê dinivîse **"HTML û JavaScript"**, nav hêmanek bi nasnameya `id = "navbes"` de cîh digre:
+
+```html copy showLineNumbers
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="navbes"></p>
+
+    <script>
+      document.getElementById("navbes").innerHTML = "HTML û JavaScript";
+    </script>
+  </body>
+</html>
+```
+
+## **Hêmana `<noscript>`**
+
+Hêmana `<noscript>` naverokek alternatîf diyar dike ku ji bikarhênerên ku di geroka xwe de JavaScript'ê neçalak kirine an gerokek ku piştgirî nade kodên JavaScript'ê heye, were xuyang kirin.
+
+```html copy showLineNumbers
+<script>
+  document.getElementById("demo").innerHTML = "Silav JavaScript!";
+</script>
+
+<noscript>Geroka we di kodên JavaScript'ê re piştgirî nade!</noscript>
+```

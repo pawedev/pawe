@@ -1,0 +1,342 @@
+[
+  {
+    "peyv": "Kompîtur",
+    "wate": "Computer, Bilgisayar, الحاسوب"
+  },
+  {
+    "peyv": "Dîmender",
+    "wate": "Monitor, Ekran, شاشة الكمبيوتر"
+  },
+  {
+    "peyv": "Klavye",
+    "wate": "Keyboard, Klavye, لوحة المفاتيح"
+  },
+  {
+    "peyv": "Mişk",
+    "wate": "Mouse, Fare, فأرة الحاسوب"
+  },
+  {
+    "peyv": "Pergala Xebitandinê",
+    "wate": "Operating System, İşletim Sistemi, نظام التشغيل"
+  },
+  {
+    "peyv": "Pel",
+    "wate": "File, Dosya / Sayfa, ملف"
+  },
+  {
+    "peyv": "Peldank",
+    "wate": "Folder, Klasör, مجلد"
+  },
+  {
+    "peyv": "Pêlêkirin",
+    "wate": "Click, Tıklama, انقر بالماوس"
+  },
+  {
+    "peyv": "Hilbijartin",
+    "wate": "Select, Seçmek, تحديد"
+  },
+  {
+    "peyv": "Jibergirtin",
+    "wate": "Copy, Kopyalama, نسخة"
+  },
+  {
+    "peyv": "Pêvekirin",
+    "wate": "Paste, Yapıştırma, لصق"
+  },
+  {
+    "peyv": "Jêkirin",
+    "wate": "Cut, Kesmek, يقطع"
+  },
+  {
+    "peyv": "Tomarkirin",
+    "wate": "Save, Kaydetme, احفظ الملف"
+  },
+  {
+    "peyv": "Vekirin",
+    "wate": "Open, Açmak, فتح ملف"
+  },
+  {
+    "peyv": "Jêbirin",
+    "wate": "Delete, Silmek, حذف"
+  },
+  {
+    "peyv": "Nûvekirin",
+    "wate": "Update, Güncelleme, تحديث"
+  },
+  {
+    "peyv": "Guhartin",
+    "wate": "Change, Değiştirme, صرافة"
+  },
+  {
+    "peyv": "Barkirin",
+    "wate": "Upload, Yükleme, تحميل"
+  },
+  {
+    "peyv": "Mîheng",
+    "wate": "Setting, Ayar, الإعدادات"
+  },
+  {
+    "peyv": "Gerok",
+    "wate": "Browser, Tarayıcı, المتصفح"
+  },
+  {
+    "peyv": "Edîtorên Kodê",
+    "wate": "Code Editor, Kod Editörü, محرر الكود"
+  },
+  {
+    "peyv": "Hêman",
+    "wate": "Element, Öğe, عنصر"
+  },
+  {
+    "peyv": "Nîşank",
+    "wate": "Tag, Etiket, وسم"
+  },
+  {
+    "peyv": "Navper",
+    "wate": "Domain, Alan Adı, نطاق"
+  },
+  {
+    "peyv": "Hewangeh",
+    "wate": "Hosting, Barındırma, الاستضافة"
+  },
+  {
+    "peyv": "Pêşrû",
+    "wate": "Front-End, Ön Yüz"
+  },
+  {
+    "peyv": "Paşrû",
+    "wate": "Back-End, Arka Yüz"
+  },
+  {
+    "peyv": "Lêpirsîn",
+    "wate": "Query, Sorgulama, استفسار"
+  },
+  {
+    "peyv": "Rajekar",
+    "wate": "Server, Sunucu, الخادم"
+  },
+  {
+    "peyv": "Şîrovekirina Rêzê",
+    "wate": "Commenting, Yorum Satırı, التعليق"
+  },
+  {
+    "peyv": "Zimana Asta Bilind",
+    "wate": "High Level Language, Yüksek Seviye Dil"
+  },
+  {
+    "peyv": "Zimana Asta Nizim",
+    "wate": "Low Level Language, Düşük Seviye Dil"
+  },
+  {
+    "peyv": "Hevoksazî",
+    "wate": "Syntax, Söz Dizimi, بناء الجملة"
+  },
+  {
+    "peyv": "Çavkaniya Azad",
+    "wate": "Open Source, Açık Kaynak, المصدر المفتوح"
+  },
+  {
+    "peyv": "Pirtûkxane",
+    "wate": "Library, Kütüphane, مكتبة"
+  },
+  {
+    "peyv": "Bikarhêner",
+    "wate": "User, Kullanıcı, المستخدم"
+  },
+  {
+    "peyv": "Navrû",
+    "wate": "Interface, Arayüz, السطح البيني"
+  },
+  {
+    "peyv": "Navrûya Bikarhêner",
+    "wate": "User Interface, Kullanıcı Arayüzü, واجهة المستخدم"
+  },
+  {
+    "peyv": "Xebitandin",
+    "wate": "Run, Çalıştırma, يجري"
+  },
+  {
+    "peyv": "Algorîtma",
+    "wate": "Algorithm, Algoritma, الخوارزمية"
+  },
+  {
+    "peyv": "Dorhêlê Testê",
+    "wate": "Test Environment, Test Ortamı, بيئة الاختبار"
+  },
+  {
+    "peyv": "Rêzê Kirarî",
+    "wate": "Process Line, İşlem Satırı"
+  },
+  {
+    "peyv": "Pêvek",
+    "wate": "Plugin, Eklenti, الإضافات"
+  },
+  {
+    "peyv": "Cureyên Daneyan",
+    "wate": "Data Types, Veri Türleri, أنواع البيانات"
+  },
+  {
+    "peyv": "Guherbar",
+    "wate": "Variable, Değişken, المتغيرات"
+  },
+  {
+    "peyv": "Neguherbar",
+    "wate": "Constant, Sabit, الثوابت"
+  },
+  {
+    "peyv": "Şert û Merc",
+    "wate": "Conditions, Koşullar, الظروف"
+  },
+  {
+    "peyv": "Zîvir",
+    "wate": "Loop, Döngü, عقدة"
+  },
+  {
+    "peyv": "Çîn",
+    "wate": "Class, Sınıf, صنف"
+  },
+  {
+    "peyv": "Tişte",
+    "wate": "Object, Nesne, الشيئية"
+  },
+  {
+    "peyv": "Bernamesaziya Berîdanina Tişteyê",
+    "wate": "Object-Oriented Programming, Nesne Yönelimli Programlama"
+  },
+  {
+    "peyv": "Fonksiyon",
+    "wate": "Function, Fonksiyon, المهام"
+  },
+  {
+    "peyv": "Rêbaz",
+    "wate": "Methot, Yöntem, منهج"
+  },
+  {
+    "peyv": "Şêwaz",
+    "wate": "Format, Yapış Biçimi, صيغة"
+  },
+  {
+    "peyv": "Bûyer",
+    "wate": "Event, Olay, حدث"
+  },
+  {
+    "peyv": "Şîrove",
+    "wate": "Comment, Yorum, تعليق"
+  },
+  {
+    "peyv": "Vegotin",
+    "wate": "Expression, İfade, التعبير"
+  },
+  {
+    "peyv": "Avaker",
+    "wate": "Constructor, Yapıcı, البناء"
+  },
+  {
+    "peyv": "Wêranker",
+    "wate": "Destructor, Yıkıcı, المدمر"
+  },
+  {
+    "peyv": "Çarçove",
+    "wate": "Framework, İskelet / Şablon, نطاق"
+  },
+  {
+    "peyv": "Çewtî",
+    "wate": "Bug, Hata, حشرة"
+  },
+  {
+    "peyv": "Berhevkar",
+    "wate": "Compiler, Derleyici, مؤلف"
+  },
+  {
+    "peyv": "Berhevanîn",
+    "wate": "Compile, Derlemek, تجميع"
+  },
+  {
+    "peyv": "Xal | .",
+    "wate": "Dot, Nokta, نقطة"
+  },
+  {
+    "peyv": "Bêhnok | ,",
+    "wate": "Comma, Virgül, فاصلة"
+  },
+  {
+    "peyv": "Xalebêhnok | ;",
+    "wate": "Semicolon, Noktalı Virgül, فاصلة منقوطة"
+  },
+  {
+    "peyv": "Xalecot | :",
+    "wate": "Colon, İki Nokta, نقطتان"
+  },
+  {
+    "peyv": "Pirsnîşan | ?",
+    "wate": "Question Mark, Soru İşareti, علامة استفهام"
+  },
+  {
+    "peyv": "Baneşan | !",
+    "wate": "Exclamation Mark, Ünlem İşareti, علامة تعجب"
+  },
+  {
+    "peyv": "Kevanek | ( )",
+    "wate": "Parentheses, Parantez, أقواس"
+  },
+  {
+    "peyv": "Kevaneka Çarçik | [ ]",
+    "wate": "Square Brackets, Köşeli Parantez, أقواس مربعة"
+  },
+  {
+    "peyv": "Kevaneka Xemilî | { }",
+    "wate": "Curly Braces, Süslü Parantez, الأقواس المعقوفة"
+  },
+  {
+    "peyv": "Bendik | -",
+    "wate": "Hyphen, Tire, واصلة"
+  },
+  {
+    "peyv": "Xêzek | _",
+    "wate": "Underscore, Alt Tire / Alt Çizgi, شرطة سفلية"
+  },
+  {
+    "peyv": "Yeknik | '",
+    "wate": "Apostrophe, Tek Tırnak, الفاصلة العليا"
+  },
+  {
+    "peyv": "Dunik | \"",
+    "wate": "Quotation Mark, Tırnak İşareti, علامات الاقتباس"
+  },
+  {
+    "peyv": "Wekhev | =",
+    "wate": "Equal, Eşittir İşareti, علامة يساوي"
+  },
+  {
+    "peyv": "Zêdek | +",
+    "wate": "Plus, Artı İşareti, زائد"
+  },
+  {
+    "peyv": "Kêmek | -",
+    "wate": "Minus, Eksi İşareti, ناقص"
+  },
+  {
+    "peyv": "Parvek | /",
+    "wate": "Slash, Bölme İşareti, خفض"
+  },
+  {
+    "peyv": "Lêkdan | x | .",
+    "wate": "Multiplication Sign, Çarpma İşareti, علامة الضرب"
+  },
+  {
+    "peyv": "Kêmtir | <",
+    "wate": "Less-than Sign, Küçüktür İşareti, أقل من علامة"
+  },
+  {
+    "peyv": "Mezintir | >",
+    "wate": "Greater-than Sign, Büyüktür İşareti, أكبر من علامة"
+  },
+  {
+    "peyv": "Sedêk | %",
+    "wate": "Percent Sign, Yüzde İşareti, علامة في المئة"
+  },
+  {
+    "peyv": "Bilindek | ^",
+    "wate": "Caret, Düzeltme -Şapka- İşareti, علامة الإقحام"
+  }
+]

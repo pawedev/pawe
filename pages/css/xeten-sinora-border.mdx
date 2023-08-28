@@ -1,0 +1,274 @@
+---
+title: "CSS: Xetên Sînora (Border)"
+---
+
+# **Xetên Sînora (Border)**
+
+Taybetmendiyên xetên sînora, dihêle hûn şêwaz, firehî û rengê sînora hêmanekê diyar bikin.
+
+Taybetmendiya `border-style` diyar dike ku kîjan sînorek were xuyang kirin.
+
+**Nirxên jêrîn têne destûr kirin:**
+
+- `dotted` - Sînorek xalî diyar dike.
+- `dashed` - Sînorekî şikestî diyar dike.
+- `solid` - Sînorek xezîk diyar dike.
+- `double` - Sînorek ducar diyar dike.
+- `groove` - Sînorek 3D-xalî diyar dike. Bandor bi nirxa rengê sînor ve girêdayî ye.
+- `ridge` - Sînorek 3D xêzkirî diyar dike. Bandor bi nirxa rengê sînor ve girêdayî ye.
+- `inset` - Sînorek hundurê 3D diyar dike. Bandor bi nirxa rengê sînor ve girêdayî ye.
+- `outset` - Sînorek dervayî 3D diyar dike. Bandor bi nirxa rengê sînor ve girêdayî ye.
+- `none` - Bê sînor diyar dike.
+- `hidden` - Sînorekî veşartî diyar dike.
+
+Taybetmendî `border-style` dikare ji yek heya çar nirxan hebe (ji bo sînorê jorîn, sînorê rastê, sînorê jêrîn, û sînorê çepê).
+
+```html copy showLineNumbers
+<style>
+  p.dotted {
+    border-style: dotted;
+  }
+
+  p.dashed {
+    border-style: dashed;
+  }
+
+  p.solid {
+    border-style: solid;
+  }
+
+  p.double {
+    border-style: double;
+  }
+
+  p.groove {
+    border-style: groove;
+  }
+
+  p.ridge {
+    border-style: ridge;
+  }
+
+  p.inset {
+    border-style: inset;
+  }
+
+  p.outset {
+    border-style: outset;
+  }
+
+  p.none {
+    border-style: none;
+  }
+
+  p.hidden {
+    border-style: hidden;
+  }
+
+  p.mix {
+    border-style: dotted dashed solid double;
+  }
+</style>
+
+<p class="dotted">Sînorek xalî diyar dike.</p>
+<p class="dashed">Sînorekî şikestî diyar dike.</p>
+<p class="solid">Sînorek xezîk diyar dike.</p>
+<p class="double">Sînorek ducar diyar dike.</p>
+<p class="groove">Sînorek 3D-xalî diyar dike.</p>
+<p class="ridge">Sînorek 3D xêzkirî diyar dike.</p>
+<p class="inset">Sînorek hundurê 3D diyar dike.</p>
+<p class="outset">Sînorek dervayî 3D diyar dike.</p>
+<p class="none">Bê sînor diyar dike.</p>
+<p class="hidden">Sînorekî veşartî diyar dike.</p>
+<p class="mix">Sînorekî tevlîhev diyar dike.</p>
+```
+
+## **Firehîya Sînora (border-width:)**
+
+Taybetmendî `border-width` firehiya çar sînoran diyar dike.
+
+Firehbûn dikare wekî mezinahiyek taybetî were danîn (di **px**, **pt**, **cm**, **em**, hwd.) an jî bi karanîna yek ji sê nirxên berê diyarkirî: **thin**, **medium**, an **thick**:
+
+```html copy showLineNumbers
+<style>
+  p.yek {
+    border-style: solid;
+    border-width: 5px;
+  }
+
+  p.du {
+    border-style: solid;
+    border-width: medium;
+  }
+
+  p.se {
+    border-style: dotted;
+    border-width: 2px;
+  }
+
+  p.car {
+    border-style: dotted;
+    border-width: thick;
+  }
+
+  p.penc {
+    border-style: double;
+    border-width: 15px;
+  }
+
+  p.ses {
+    border-style: double;
+    border-width: thick;
+  }
+</style>
+
+<p class="yek">solid - 5px</p>
+<p class="du">solid - medium</p>
+<p class="se">dotted - 2px</p>
+<p class="car">dotted - thick</p>
+<p class="penc">double - 15px</p>
+<p class="ses">double - thick</p>
+```
+
+## **Rengê Sînora (border-color:)**
+
+Taybetmendî `border-color` ji bo danîna rengê çar sînoran tê bikar anîn.
+
+Reng dikare ji hêla:
+
+- nav - navekî rengîn diyar bike, wekî **"red"**
+- HEX - nirxek HEX-ê diyar bike, wek **"#ff0000"**
+- RGB - nirxek RGB diyar bike, wek **"rgb(255,0,0)"**
+- HSL - nirxek HSL-ê diyar bike, wek **"hsl(0, 100%, 50%)"**
+
+**Nîşe:** Heke `border-color` neyê danîn, ew rengê hêmanê mîras digire.
+
+```html copy showLineNumbers
+<style>
+  p.yek {
+    border-style: solid;
+    border-width: 5px;
+    border-color: orange;
+  }
+
+  p.du {
+    border-style: solid;
+    border-width: medium;
+    border-color: red;
+  }
+
+  p.se {
+    border-style: dotted;
+    border-width: 2px;
+    border-color: green;
+  }
+
+  p.car {
+    border-style: dotted;
+    border-width: thick;
+    border-color: #000;
+  }
+
+  p.penc {
+    border-style: double;
+    border-width: 15px;
+    border-color: rgb(98, 0, 255);
+  }
+
+  p.ses {
+    border-style: double;
+    border-width: thick;
+    border-color: hsl(0, 0%, 25%);
+  }
+</style>
+
+<p class="yek">solid - 5px - orange</p>
+<p class="du">solid - medium - red</p>
+<p class="se">dotted - 2px - green</p>
+<p class="car">dotted - thick - #000</p>
+<p class="penc">double - 15px - rgb(98, 0, 255)</p>
+<p class="ses">double - thick - hsl(0, 0%, 25%)</p>
+```
+
+## **Kurtenivîsa Xetên Sînora (border:)**
+
+Mîna ku we di beşên berê de dît, gelek taybetmendî hene ku mirov bi sînoran re mijûl bibe.
+
+Ji bo kurtkirina kodê, di heman demê de gengaz e ku meriv hemî taybetmendiyên sînor ên kesane di yek rêze de diyar bike.
+
+Taybetmendî `border` ji bo taybetmendiyên sînor ên jêrîn taybetmendiyek kurt e:
+
+- border-width
+- border-style _(pêwist)_
+- border-color
+
+```html copy showLineNumbers
+<style>
+  p.yek {
+    border: 5px solid orange;
+  }
+
+  p.du {
+    border-left: medium solid red;
+  }
+
+  p.se {
+    border-right: 2px dotted green;
+  }
+
+  p.car {
+    border-bottom: thick dotted #000;
+  }
+
+  p.penc {
+    border-top: 15px double rgb(98, 0, 255);
+  }
+
+  p.ses {
+    border: thick double hsl(0, 0%, 25%);
+  }
+</style>
+
+<p class="yek">solid - 5px - orange</p>
+<p class="du">solid - medium - red</p>
+<p class="se">dotted - 2px - green</p>
+<p class="car">dotted - thick - #000</p>
+<p class="penc">double - 15px - rgb(98, 0, 255)</p>
+<p class="ses">double - thick - hsl(0, 0%, 25%)</p>
+```
+
+## **Sînorên Girover (border-radius:)**
+
+Taybetmendî `border-radius` ji bo lê zêdekirina sînorên girover li hêmanekê tê bikar anîn:
+
+```html copy showLineNumbers
+<style>
+  p.yek {
+    border: 2px solid red;
+    padding: 5px;
+  }
+
+  p.du {
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  p.se {
+    border: 2px solid red;
+    border-radius: 8px;
+    padding: 5px;
+  }
+
+  p.car {
+    border: 2px solid red;
+    border-radius: 12px;
+    padding: 5px;
+  }
+</style>
+
+<p class="yek">Ne Girover</p>
+<p class="du">Girover</p>
+<p class="se">Girover</p>
+<p class="car">Girover</p>
+```

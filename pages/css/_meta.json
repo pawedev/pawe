@@ -1,0 +1,56 @@
+{
+  "index": {
+    "title": "CSS",
+    "type": "doc",
+    "theme": {
+      "layout": "full",
+      "breadcrumb": false,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "pagination": true
+    }
+  },
+  "destpeke": "Destpêkê",
+  "hevoksazi-syntax": "Hevoksazî (Syntax)",
+  "hilbijeran-selectors": "Hilbijêran (Selectors)",
+  "siroveyan-comments": "Şîroveyan (Comments)",
+  "rengan-colors": "Rengan (Colors)",
+  "pasru-background": "Paşrû (Background)",
+  "xeten-sinora-border": "Xetên Sînora (Border)",
+  "valahiya-kelekan-margin": "Valahiya Kêlekan (Margin)",
+  "tijehiya-kelekan-padding": "Tijehiya Kêlekan (Padding)",
+  "bilindahi-firehi-width-height": "Bilindahî û Firehî (Width-Height)",
+  "modela-qutiye": "Modela Qutiyê (Box Model)",
+  "formaten-nivisa-text": "Formatên Nivîsa (Text)",
+  "cureyen-nivisa-fonts": "Cureyên Nivîsa (Fonts)",
+  "giredank-link": "Girêdank (Link)",
+  "listeyan-lists": "Lîsteyan (Lists)",
+  "keval-table": "Keval (Table)",
+  "pesandan-display": "Pêşandan (Display)",
+  "pozisyon-position": "Pozîsyon (Position)",
+  "z-index": "Z-Index",
+  "overflow": "Overflow",
+  "float": "Float",
+  "inline-block": "Nirxa Inline-Block",
+  "rezkirin-align": "Rêzkirin (Align)",
+  "hevberker-combinator": "Hevberker (Combinator)",
+  "hilbijeren-cina-qaso": "Hilbijêrên Çîna Qaşo (Pseudo-Class)",
+  "hilbijeren-hemana-qaso": "Hilbijêrên Hêmana Qaşo (Pseudo-Element)",
+  "zelalbun-opacity": "Zelalbûn (Opacity)",
+  "hilbijeren-taybetmendiye": "Hilbijêrên Taybetmendiyê (Attribute Selectors)",
+  "yekeyan-units": "Yekeyan (Units)",
+  "qanuna-important": "Qanûna !important",
+  "fonksiyonen-matematiki-math-functions": "Fonksiyonên Matematîkî (Math Functions)",
+
+  "-peskefti": {
+    "title": "Pêşkeftî",
+    "type": "separator"
+  },
+
+  "peyven-sereke-ya-renge-color-keywords": "Peyvên Sereke ya Rengê (Color Keywords)",
+  "gradients": "Gradients",
+  "bandora-si-shadow": "Bandora Sî (Shadow)",
+  "efekten-nivise-text-effects": "Efektên Nivîsê (Text Effects)",
+  "web-fonts": "Fontên Web'ê (Web Fonts)"
+}

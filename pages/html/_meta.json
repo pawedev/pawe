@@ -1,0 +1,54 @@
+{
+  "index": {
+    "title": "HTML",
+    "type" : "doc",
+    "theme": {
+      "layout": "full",
+      "breadcrumb": false,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "pagination": true
+    }
+  },
+  
+  "destpeke": "Destpêkê",
+  "minaken-bingehin": "Mînakên Bingehîn",
+  "taybetmendiyan-attributes": "Taybetmendiyan",
+  "sernavan-headings": "Sernavan (Headings)",
+  "formaten-nivisa-formatting": "Formatên Nivîsa (Formatting)",
+  "siroveyan-comments": "Şîroveyan (Comments)",
+  "giredankan-links": "Girêdankan (Links)",
+  "weneyan-images": "Wêneyan (Images)",
+  "listeyan-lists": "Lîsteyan (Lists)",
+  "kevalan-tables": "Kevalan (Tables)",
+  "blok-navrez-block-inline": "Blok û Navrêz (Block and Inline)",
+  "css": "Bikaranîna Kodên CSS'ê",
+  "cin-class": "Çîn (Class)",
+  "nasname-id": "Nasname (ID)",
+  "iframe": "Iframe",
+  "javascript": "Bikaranîna Kodên JavaScript'ê",
+  "reya-pele-file-paths": "Rêya Pelê (File Paths)",
+  "sere-rupele-head": "Serê Rûpelê (Head)",
+  "plansaziya-rupele-layouts": "Plansaziya Rûpelê (Layouts)",
+
+  "-forman": {
+    "title": "Forman",
+    "type": "separator"
+  },
+
+  "forman-forms": "Forman (Forms)",
+  "taybetmendiyen-forme": "Taybetmendiyên Formê (Form Attributes)",
+  "hemanen-forme": "Hêmanên Formê (Form Elements)",
+  "cureyen-inpute": "Cureyên Input'ê (Input Types)",
+  "taybetmendiyen-inpute": "Taybetmendiyên Input'ê (Input Attributes)",
+
+  "-medya": {
+    "title": "Medya",
+    "type": "separator"
+  },
+  
+  "video": "Vîdeo",
+  "deng-audio": "Deng (Audio)",
+  "videoyen-youtube": "Vîdeoyên YouTube-ê"
+}

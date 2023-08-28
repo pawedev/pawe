@@ -1,0 +1,120 @@
+---
+title: "HTML: Taybetmendiyên Formê (Form Attributes)"
+---
+
+# **Taybetmendiyên Formê (Form Attributes)**
+
+Ev beş taybetmendiyên cihêreng ên ji bo hêmana `<form>` 'ê vedibêje.
+
+## **Taybetmendiya "action"**
+
+Taybetmendîya `action` çalakiya ku dema ku form tê şandin diyar dike.
+
+Bi gelemperî, dema ku bikarhêner li ser butona şandinê bitikîne, daneyên formê ji pelek li ser rajedarê *(server)* re têne şandin.
+
+Heke taybetmendiya `action` were derxistin, kiryar li ser rûpela heyî tê danîn.
+
+Di mînaka jêrîn de, daneyên formê ji pelek bi navê **"tekeve.php"** re tê şandin.
+
+Di vê pelê de scrîptek paşrû _(server-side)_ heye ku daneyên formê digire dest:
+
+```html copy showLineNumbers
+<form action="/form-control.php">
+  <label>Navnîşana E-Mail'ê:</label><br />
+  <input type="text" /><br />
+  <label>Şîfre:</label><br />
+  <input type="text" /><br /><br />
+  <input type="submit" value="Têkeve" />
+</form>
+```
+
+## **Taybetmendiya "target"**
+
+Taybetmendiya `target` diyar dike ku dê bersiva ku piştî şandina formê tê wergirtin li ku derê were xuyang kirin.
+
+Taybetmendî `target` dikare yek ji van nirxên jêrîn hebe:
+
+`_blank`
+
+Bersiv di pencereyek an tabloyek nû de tê xuyang kirin
+
+`_self`
+
+Bersiv di pencereya heyî de tê xuyang kirin
+
+`_parent`
+
+Bersiv di çarçoveya de tê nîşandan
+
+`_top`
+
+Bersiv di tevahiya laşê pencereyê de tê xuyang kirin
+
+Nirxa standart *(*\_self*)* ev e ku tê vê wateyê, bersiv dê di pencereya heyî de vebe.
+
+```html copy showLineNumbers
+<form action="/form-control.php" target="_blank">
+  <!-- Naveroka Formê -->
+</form>
+
+<form action="/form-control.php" target="_self">
+  <!-- Naveroka Formê -->
+</form>
+
+<form action="/form-control.php" target="_parent">
+  <!-- Naveroka Formê -->
+</form>
+
+<form action="/form-control.php" target="_top">
+  <!-- Naveroka Formê -->
+</form>
+```
+
+## **Taybetmendiya "method"**
+
+Taybetmendiya `method` rêbaza HTTP-ê diyar dike ku di dema şandina daneya formê de were bikar anîn.
+
+Form-dane dikare wekî guhêrbarên URL (bi `method="get"`) an wekî danûstandina posta HTTP (bi `method="post"`) were şandin.
+
+Rêbaza HTTP ya standart dema ku daneya formê radest dike **GET** e.
+
+Ev mînak dema ku daneyên formê radest dike rêbaza **GET** bikar tîne:
+
+```html copy showLineNumbers
+<form action="/form-control.php" method="get">
+  <!-- Naveroka Formê -->
+</form>
+```
+
+Ev mînak dema ku daneyên formê radest dike rêbaza **POST** bikar tîne:
+
+```html copy showLineNumbers
+<form action="/form-control.php" method="post">
+  <!-- Naveroka Formê -->
+</form>
+```
+
+**Rêbaza GET:**
+
+- Daneyên formê, bi cotên **nav/nirx**, li URL-yê zêde dike. **Mînak:** `navemalper.com/rupel.html?nav=nirx`
+- Qet **GET** bikar neynin da ku daneyên hesas bişînin! **(Daneyên forma radestkirî di URL-ê de xuya ye!)**
+- Dirêjahiya URL'ek sînorkirî ye **(2048 karakter)**
+- Ji bo radestkirina formên ku bikarhênerek bixwaze encamê nîşan bide başe
+
+**Rêbaza POST:**
+
+- Daneyên formê di hundurê laşê daxwaza HTTP de dişîne **(daneyên forma hatî şandin di URL-ê de nayê xuyang kirin)**
+- POST ti sînorên mezinbûnê tune, û dikare were bikar anîn da ku mîqdarên mezin ên daneyê bişîne.
+- Ger daneya formê agahdariya hesas an kesane hebe, her gav **POST** bikar bînin!
+
+## **Taybetmendiya "autocomplete"**
+
+Taybetmendî `autocomplete` diyar dike ka formek divê xwedan tijîkirina otomatîkî be an nekêşe.
+
+Dema ku temamkirina otomatîkî çalak e, gerok bixweber nirxan li gorî nirxên ku bikarhêner berê destnîşan kiriye temam dike.
+
+```html copy showLineNumbers
+<form action="/form-control.php" autocomplete="on">
+  <!-- Naveroka Formê -->
+</form>
+```

@@ -1,0 +1,136 @@
+---
+title: "HTML: Taybetmendiyan (Attributes)"
+---
+
+# **Taybetmendiyan (Attributes)**
+
+Taybetmendiyên HTML'ê di derheqê hêmanên HTML'ê de agahdariya bêhtir nîşan dike.
+
+Hemî hêmanên HTML'ê dikarin xwedan taybetmendî bin.
+
+Taybetmendî her gav di nîşanka destpêkê de têne diyar kirin.
+
+Taybetmendî bi gelemperî di cotên **nav** û **nirx** de têne dest nîşan kirin. **Mînak: name = "nirx"**
+
+Standarda HTML'ê navên taybetiyên bi tîpên piçûk were nivîsandin. **Rast: src="pawe.png" - ŞAŞ: SRC="pawe.png"**
+
+## **Taybetmendiya "href"**
+
+`<a>` girêdankek diyar dike.
+
+Taybetmendî `href` URL'ya rûpelê ku rêya lê diçe diyar dike:
+
+```html copy showLineNumbers
+<a href="https://twitter.com/pawedev">Hesabê Twitter'ê</a>
+```
+
+## **Taybetmendiya "src"**
+
+`<img>` ji bo ku wêneyek di rûpelek HTML'ê de bi cîh bike tê bikar anîn.
+
+Taybetmendî `src` rêça wêneyê ku were xuyang kirin diyar dike:
+
+```html copy showLineNumbers
+<img src="html.jpg" />
+```
+
+**Du awahî hene ku mirov URL'ê di taybetmendiyê src de diyar bike:**
+
+**1.** URL _\-ya bêkêmasî -_ Girêdankên wêneyek derveyî ya ku li ser malperek din tê mêvandar kirin.
+
+```html copy showLineNumbers
+<img src="https://navemalpere.com/wene.jpg" />
+```
+
+**2.** URL _\-ya têkildar -_ Girêdankên wêneyek ku di nava malperê de hate cîh kirin.
+
+Li vir, URL navê malperê (navper) nagire.
+
+```html copy showLineNumbers
+<img src="wene.jpg" />
+```
+
+## **Taybetmendiyên "width" û "height"**
+
+Di hêmana `<img>` ê her weha taybetmendiyên `width` û `height` yên ku dirêjahi û bilindahiya wêneyê _(bi pixelan)_ diyar dikin:
+
+```html copy showLineNumbers
+<img src="wene.jpg" width="100" height="50" />
+```
+
+## **Taybetmendiya "alt"**
+
+Taybetmendiya `alt` ji bo `<img>` nivîsek alternatîf ji bo wêneyek diyar dike, heger wêne ji ber hin sedeman neyê xuyang kirin.
+
+Ev dibe sedema pêwendiyek hêdî, an xeletiyek di taybetmendiyê `src` de heye.
+
+```html copy showLineNumbers
+<img src="beybun.jpg" alt="Ev wêne ya beybûnê ye." />
+```
+
+## **Taybetmendiya "title"**
+
+Taybetmendîya `title` hin agahdariya zêde li ser hêmanek diyar dike.
+
+Nirxa taybetmendiya `title` dê wekî şîreta amûrekê were xuyang kirin.
+
+Dema ku hûn mişkê li ser hêmanê tînin ev nirx an jî nivîs xuyang dibe.
+
+```html copy showLineNumbers
+<p title="Sernav li vir tên nivîsandin">Ez HTML fêr dibim.</p>
+```
+
+## **Taybetmendiya "style"**
+
+Taybetmendiya `style` ji bo lê zêdekirina şêwazên hêmanek, wek reng, tîp, mezinahî, û hêj bêtir tê bikar anîn.
+
+Di nava vê taybetmendiyê kodên CSS'ê tên nivîsandin.
+
+```html copy showLineNumbers
+<h1 style="font-size:24px;">Taybetmendîya Style</h1>
+<p style="color:red;">Rêzedersên HTML'ê</p>
+<a href="https://pawe.dev" style="background-color:yellow;">Pawe Pêşvebirin</a>
+```
+
+## **Taybetmendiya "lang"**
+
+Pêwiste ku hûn her gav taybetmendiyê `lang` di hundurê `<html>` de bi cîh bikin, da ku hûn zimanê rûpela Web'ê diyar bikin.
+
+Ev tê wateya ku alîkariya motorên lêgerîn û gerokan bike.
+
+Mînaka jêrîn Îngilîzî wekî ziman diyar dike:
+
+```html copy showLineNumbers
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    ...
+  </body>
+</html>
+```
+
+Ji bo destnîşan kirina zimanê **Kurdî** em koda "**ku**" bi kar tînin.
+
+```html copy showLineNumbers
+<!DOCTYPE html>
+<html lang="ku">
+  <body>
+    ...
+  </body>
+</html>
+```
+
+Kodên welat jî dikarin li koda zimanî ya di taybetmendiyê `lang` de werin zêdekirin.
+
+Ji ber vê yekê, her du tîpên yekem zimanê rûpela HTML'ê diyar dikin, û du tîpên paşîn jî welat diyar dikin.
+
+Nimûneya jêrîn **Îngilîzî** wekî ziman û **Dewletên Yekbûyî** wekî welat destnîşan dike:
+
+```html copy showLineNumbers
+<!DOCTYPE html>
+<html lang="en-US">
+  <body>
+    ...
+  </body>
+</html>
+```

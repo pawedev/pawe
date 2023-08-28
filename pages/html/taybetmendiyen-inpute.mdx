@@ -1,0 +1,196 @@
+---
+title: "HTML: Taybetmendiyên Input'ê (Input Attributes)"
+---
+
+# **Taybetmendiyên Input'ê (Input Attributes)**
+
+Ev beş taybetmendiyên cûda yên ji bo hêmana `<input>` 'ê vedibêje.
+
+## **Taybetmendiya "value"**
+
+Taybetmendiya `value` ji bo qada têketinê nirxek destpêkê diyar dike:
+
+```html copy showLineNumbers
+<form>
+  <label for="nav">Navê te:</label><br />
+  <input type="text" id="nav" name="nav" value="Rojhat" /><br />
+</form>
+```
+
+## **Taybetmendiya "readonly"**
+
+Taybetmendiya `readonly` diyar dike ku qada têketinê tenê-xwendin e.
+
+Qadek têketinê ya tenê-xwendin nikare were guheztin (lêbelê, bikarhênerek dikare têxe wê, ronî bike û nivîsê jê kopî bike).
+
+Dema şandina formê nirxa qadeke têketina tenê-xwendin dê were şandin!
+
+```html copy showLineNumbers
+<form>
+  <label for="nav">Navê te:</label><br />
+  <input type="text" id="nav" name="nav" value="Rojhat" readonly /><br />
+</form>
+```
+
+## **Taybetmendiya "disabled"**
+
+Taybetmendiya `disabled` diyar dike ku divê qada têketinê were neçalak kirin.
+
+Qadek têketinê ya neçalak nayê bikar anîn û nayê klîk kirin.
+
+Dema şandina formê nirxa qada têketinê ya neçalak **nayê şandin!**
+
+```html copy showLineNumbers
+<form>
+  <label for="nav">Navê te:</label><br />
+  <input type="text" id="nav" name="nav" value="Rojhat" disabled /><br />
+</form>
+```
+
+## **Taybetmendiya "size"**
+
+Taybetmendiya `size` firehiya xuyayî ya qada têketinê bi tîpan diyar dike.
+
+Nirxa xwerû ji bo `size` **20** e.
+
+**Nîşe:** Taybetmendî `size` bi cureyên input'ê jêrîn re dixebite: **text, search, tel, url, email, û password.**
+
+```html copy showLineNumbers
+<form>
+  <label for="nav">Navê te:</label><br />
+  <input type="text" id="nav" name="nav" value="Rojhat" size="50" /><br />
+
+  <label for="pasnav">Paşnavê te:</label><br />
+  <input type="text" id="pasnav" name="pasnav" size="4" /><br />
+</form>
+```
+
+## **Taybetmendiya "maxlength"**
+
+Taybetmendiya `maxlength` têketinê herî zêde hejmara tîpan ku di qada têketinê de destûr tê dayîn diyar dike.
+
+**Nîşe:** Dema ku a `maxlength` were danîn, qada têketinê dê ji hejmara diyarkirî ya tîpan zêdetir qebûl neke. Lêbelê, ev taybetmendî ti bersivek peyda nake. Ji ber vê yekê, heke hûn dixwazin bikarhêner hişyar bikin, divê hûn koda JavaScript'ê binivîsin.
+
+```html copy showLineNumbers
+<form>
+  <label for="nav">Navê te:</label><br />
+  <input type="text" id="nav" name="nav" value="Rojhat" maxlength="4" />
+</form>
+```
+
+## **Taybetmendiyên "min" û "max"**
+
+Taybetmendîyên `min` û `max` ji bo qada têketinê nirxa herî kêm û herî zêde diyar dikin.
+
+Taybetmendiyên `min` û `max` bi cureyên input'ê yên jêrîn re dixebitin: **number, range, date, datetime-local, month, time û week.**
+
+```html copy showLineNumbers
+<form>
+  <label for="hejmar">Hejmarê te:</label><br />
+  <input type="number" id="hejmar" name="hejmar" min="1" max="10" />
+</form>
+```
+
+## **Taybetmendiya "multiple"**
+
+Taybetmendiya `multiple` diyar dike ku destûr heye ku bikarhêner di qadeke têketinê de ji yekî zêdetir nirx binivîsîne.
+
+Taybetmendî `multiple` bi cureyên input'ê jêrîn re dixebite: **e-mail û file.**
+
+```html copy showLineNumbers
+<form>
+  <label for="pelan">Pelan Hilbijêre:</label>
+  <input type="file" id="pelan" name="pelan" multiple />
+</form>
+```
+
+## **Taybetmendiya "placeholder"**
+
+Taybetmendiya `placeholder` nîşanek kurt diyar dike ku nirxa bendewar a qada têketinê diyar dike _(nirxek nimûne an ravekek kurt a formata çaverêkirî)_.
+
+Berî ku bikarhêner nirxek binivîsîne, nîşanek kurt di qada têketinê de tê xuyang kirin.
+
+Taybetmendî `placeholder` bi cureyên input'ê jêrîn re dixebite: **text, search, url, tel, email û password.**
+
+```html copy showLineNumbers
+<form>
+  <label for="nav">Navê te:</label><br />
+  <input type="text" id="nav" name="nav" placeholder="Mînak: Delal" />
+</form>
+```
+
+## **Taybetmendiya "required"**
+
+Taybetmendiya `required` diyar dike ku berî şandina formê divê qadek têketinê were dagirtin.
+
+Taybetmendî `required` bi cureyên input'ê jêrîn re dixebite: **text, search, url, tel, email, password, date pickers, number, checkbox, radio û file.**
+
+```html copy showLineNumbers
+<form>
+  <label for="nav">Navê te:</label><br />
+  <input type="text" id="nav" name="nav" required />
+  <button type="submit">Bişîne</button>
+</form>
+```
+
+## **Taybetmendiya "step"**
+
+Taybetmendiya `step` navberên hejmarên qanûnî yên ji bo qada têketinê diyar dike.
+
+**Mînak:** heke gav = "3", hejmarên qanûnî dikarin -3, 0, 3, 6, hwd.
+
+Ev taybetmendî dikare bi taybetmendiyên `max` û `min` re bi hev re were bikar anîn da ku rêzek nirxên qanûnî biafirîne.
+
+Taybetmendî `step` bi cureyên input'ê yên jêrîn re dixebite: **number, range, date, datetime-local, month, time û week.**
+
+```html copy showLineNumbers
+<form>
+  <label for="hejmar">Hejmarê te:</label><br />
+  <input type="number" id="hejmar" name="hejmar" step="4" />
+</form>
+```
+
+## **Taybetmendiya "autofocus"**
+
+Taybetmendiya `autofocus` diyar dike ku dema ku rûpel bar dike divê qadek têketinê bixweber balê bikişîne.
+
+```html copy showLineNumbers
+<form>
+  <label for="nav">Navê te:</label><br />
+  <input type="text" id="nav" name="nav" autofocus />
+</form>
+```
+
+## **Taybetmendiya "list"**
+
+Taybetmendiya `list` ji hêmanekê `<input>` re vedibêje ku ji bo hêmanek `<datalist>`  vebijarkên pêşwextkirî vedihewîne.
+
+```html copy showLineNumbers
+<form>
+  <input list="gerokan" />
+  <datalist id="gerokan">
+    <option value="Internet Explorer"></option>
+    <option value="Firefox"></option>
+    <option value="Chrome"></option>
+    <option value="Opera"></option>
+    <option value="Safari"></option>
+  </datalist>
+</form>
+```
+
+## **Taybetmendiya "autocomplete"**
+
+Taybetmendiya `autocomplete` diyar dike ka formek an qadek têketinê divê tijekirina otomatîkî çalak be an negirtî be.
+
+Temamkirina otomatîkî destûrê dide gerokê ku nirxê pêşbînî bike.
+
+Dema ku bikarhênerek dest bi nivîsandina qadekê dike, gerok divê vebijarkên dagirtina qadê, li ser bingeha nirxên berê yên tîpkirî nîşan bide.
+
+Taybetmendî `autocomplete` bi `<form>` û cureyên `<input>`  jêrîn re dixebite: **text, search, url, tel, email, password, datepickers, range û color.**
+
+```html copy showLineNumbers
+<form autocomplete="on">
+  <label for="nav">Navê te:</label><br />
+  <input type="text" id="nav" name="nav" />
+</form>
+```

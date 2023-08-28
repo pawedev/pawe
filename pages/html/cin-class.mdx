@@ -1,0 +1,140 @@
+---
+title: "HTML: Çîn (Class)"
+---
+
+# **Çîn (Class)**
+
+Taybetmendiya `class` ji bo diyarkirina çînek ji bo hêmanek HTML'ê tê bikar anîn.
+
+Gelek hêmanên HTML'ê dikarin heman çînê hevpar bikar bînin.
+
+Taybetmendîya `class` bi gelemperî ji bo nîşankirina navek çînê di nava pelê stîlê de tên bikar anîn.
+
+Di heman demê de ew dikare ji hêla JavaScript'ê ve were bikar anîn da ku hêmanên bi navê çîna taybetî bigihîje û manîpule bike.
+
+Di mînaka jêrîn de sê hêmanên me yên `<div>` ê hene, bi taybetmendiya `class` ve bi nirxa "bajar" hate destnîşan kirin.
+
+Hemî sê hêmanên `<div>`, dê li gorî pênaseya `.bajar` ve stîlê de wekhev werin şêwaz kirin.
+
+```html copy showLineNumbers
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .bajar {
+        background-color: tomato;
+        color: white;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bajar">
+      <h2>Amed</h2>
+    </div>
+
+    <div class="bajar">
+      <h2>Qamişlo</h2>
+    </div>
+
+    <div class="bajar">
+      <h2>Dêrsim</h2>
+    </div>
+  </body>
+</html>
+```
+
+Di mînaka jêrîn de du hêmanên me yê `<span>` hene bi taybetmendiyek `class` û bi nirxa "sor".
+
+Her du hêmana `<span>` dê li gorî pênaseya `.sor` stîlê wekhev werin şêwaz kirin.
+
+```html copy showLineNumbers
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .sor {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Ev Rêzedersên <span class="sor">HTML'e</span> û Beşa Çîna ye.</h1>
+    <p>Ez beşa <span class="sor">Çîna</span> fêr dibim.</p>
+  </body>
+</html>
+```
+
+## **Hevoksazîya Çînê**
+
+**Ji bo afirandina çînek**; Karaktera xalê `.` binivîsin, li pey navê çînê. Dûv re, taybetmendiyên CSS-ê yên di nav kevanekên xemilî `{}` de diyar bikin.
+
+```css copy showLineNumbers
+.navecine {
+  font-size: 15px;
+}
+```
+
+```html copy showLineNumbers
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .kesk {
+        color: green;
+      }
+
+      .sor {
+        color: red;
+      }
+
+      .zer {
+        color: yellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="zer">Silav!</div>
+    <h1>Ev Rêzedersên <span class="kesk">HTML'e</span> û Beşa Çîna ye.</h1>
+    <p>Ez beşa <span class="sor">Çîna</span> fêr dibim.</p>
+  </body>
+</html>
+```
+
+## **Çînên Pirhejmar**
+
+Hêmanên HTML'ê dikarin ji yek çînek zêdetir bin.
+
+Ji bo danasîna çend çînan, navên çînê bi valahiyê veqetînin, mînak `<div class="sor stur">`.
+
+Hêman dê li gorî hemî çînên diyarkirî were şêwaz kirin.
+
+Di mînaka jêrîn de, hêmana yekem hem ji çîna "**sor**" û hem jî ji çînê "**stur**" re ye, û dê şêwazên CSS ji her du çînan bistîne.
+
+```html copy showLineNumbers
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .sor {
+        color: red;
+      }
+
+      .stur {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p class="sor">Paragrafê sor e</p>
+    <p class="sor stur">Paragrafê sor û stûr e</p>
+    <p class="sor">Paragrafê sor e</p>
+  </body>
+</html>
+```

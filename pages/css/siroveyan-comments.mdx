@@ -1,0 +1,71 @@
+---
+title: "CSS: Şîroveyan (Comments)"
+---
+
+# **Şîroveyan (Comments)**
+
+**Şîroveyên CSS'ê**; di gerokê de nayên xuyang kirin, lê ew dikarin bibin alîkar ku koda çavkaniya we rûpelê bikin.
+
+Şîrove ji bo ravekirina kodê têne bikar anîn, û dibe ku gava ku hûn koda çavkaniyê di demek paşîn de biguherînin bibin alîkar.
+
+Şîrove ji hêla gerokan ve têne paşguh kirin.
+
+Şîroveyek CSS di hundurê kodê de tê danîn, û bi `/*` dest pê dike û bi `*/` dawî dibe.
+
+```css copy showLineNumbers
+/* Ev şîroveyek yek rêz e */
+p {
+  color: red;
+}
+```
+
+Hûn dikarin li ku derê hûn dixwazin di kodê de şîroveyan lê zêde bikin:
+
+```css copy showLineNumbers
+p {
+  color: red; /* Rengê nivîsê sor e */
+}
+```
+
+Şîrove jî dikarin çend rêzan bigirin:
+
+```css copy showLineNumbers
+/* Ev
+    şîroveyek
+    pir-xêz e */
+
+p {
+  color: red;
+}
+```
+
+## **Şîroveyên HTML û CSS'ê**
+
+Ji rêzedersa HTML'ê, hûn fêr bûn ku hûn dikarin bi karanîna `<!--...-->` hevoksaziyê şîroveyan li çavkaniya HTML'a xwe zêde bikin.
+
+Di mînaka jêrîn de, em berhevokek şîroveyên HTML û CSS'ê bikar tînin:
+
+```html copy showLineNumbers
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p {
+        color: red;
+        /* Rengê nivîsê sor e */
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Rêzedersên CSS'ê</h2>
+
+    <!-- Ev paragrafan bi rengê sor hate nivîsandin -->
+    <p>Şîroveyan:</p>
+    <p>
+      Şîroveyên CSS'ê; di gerokê de nayên xuyang kirin, lê ew dikarin bibin
+      alîkar ku koda çavkaniya we rûpelê bikin.
+    </p>
+  </body>
+</html>
+```

@@ -1,0 +1,85 @@
+---
+title: "HTML: Vîdeoyên YouTube-ê"
+---
+
+# **Vîdeoyên YouTube-ê**
+
+Rêya herî hêsan a lîstina vîdeoyên di HTML'ê de, karanîna YouTube-ê ye.
+
+Veguheztina vîdeoyan ji bo formên cihêreng dikare dijwar û demdirêj be.
+
+Çareserek hêsantir ev e ku hûn bihêlin vîdeoyên YouTube-ê di malpera we de bilîze.
+
+Dema ku hûn vîdeoyek hilînin _(an bilîzin)_ dê nasname -id- _(wek **YfavewTOEbI**)_ nîşan bide.
+
+Hûn dikarin vê id-ê bikar bînin, û vîdeoya xwe di koda HTML'ê de binihêrin.
+
+## **Vîdeoyek YouTube'ê di HTML'ê de lîstin**
+
+**Ji bo lîstina vîdeoya xwe li ser rûpelek malperê:**
+
+- Vîdeoyê ji YouTube re barkirin.
+- Nasnameya vîdeoyê têbînîyek bigirin.
+- Di rûpela malpera xwe de hêmanek `<iframe>` diyar bikin.
+- Bila taybetmendî `src` li URL'a vîdeoyê nîşan bide.
+- Ji bo diyarkirina pîvana lîstikvanê taybetmendiyên `width` û `height` bikar bînin.
+- Parametreyên din li URL-ê zêde bikin _(li jêr binêre)_.
+
+```html copy showLineNumbers
+<iframe
+  width="420"
+  height="315"
+  src="https://www.youtube.com/embed/YfavewTOEbI"
+></iframe>
+```
+
+## **YouTube Autoplay + Bêdengkirin**
+
+Hûn dikarin bihêlin vîdeoya we bixweber _(otomatîkî)_ dest pê bike dema ku bikarhênerek seredana rûpelê dike, bi `autoplay=1` lêzêdekirina URL'ya YouTube-ê.
+
+Lêbelê, bixweber destpêkirina vîdeoyek ji bo mêvanên we aciz be!
+
+Paşê lê `mute=1` zêde bikin da ku hûn vîdeoya we bixweber û bêdeng dest pê bike.
+
+```html copy showLineNumbers
+<iframe
+  width="420"
+  height="315"
+  src="https://www.youtube.com/embed/YfavewTOEbI?autoplay=1&mute=1"
+>
+</iframe>
+```
+
+## **YouTube Vîdeoyê Dubare Bikin -Loop-**
+
+`loop=1` zêde bikin da ku hûn vîdeoya xwe herheyî bihêlin.
+
+Nirx **0**: Vîdeo dê tenê carekê bilîze.
+
+Nirx **1**: Vîdeo dê her û her dubare bibe.
+
+```html copy showLineNumbers
+<iframe
+  width="420"
+  height="315"
+  src="https://www.youtube.com/embed/YfavewTOEbI?&loop=1"
+>
+</iframe>
+```
+
+## **Qada Kontrola Vîdeoyê YouTube**
+
+`controls=0` lê zêde bikin ku di lîstikvana vîdeoyê de kontrolên nîşan **nede**.
+
+Nirx **0**: Kontrolên lîstikvan nayên xuyang kirin.
+
+Nirx **1**: Kontrolên lîstikvan dîmenderê kontrol dike.
+
+```html copy showLineNumbers
+<iframe
+  width="420"
+  height="315"
+  src="https://www.youtube.com/embed/YfavewTOEbI?&controls=0"
+>
+</iframe>
+```

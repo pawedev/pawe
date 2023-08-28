@@ -1,0 +1,178 @@
+---
+title: "CSS: Rengan (Colors)"
+---
+
+# **Rengan (Colors)**
+
+Reng, bi karanîna navên rengan, an nirxên **RGB, HEX, HSL, RGBA, HSLA** têne destnîşan kirin.
+
+Di CSS'ê de, rengek bi karanîna navek dikare were destnîşan kirin.
+
+**Mînak:** **white, black, yellow, red, green, pink, purple, orange hwd.**
+
+Mînaka jêrîn bi navên rengan ve hate destnîşan kirin.
+
+```html copy showLineNumbers
+<html>
+  <body>
+    <h1 style="background-color:Tomato;">Tomato</h1>
+    <h1 style="background-color:Orange;">Orange</h1>
+    <h1 style="background-color:DodgerBlue;">DodgerBlue</h1>
+    <h1 style="background-color:MediumSeaGreen;">MediumSeaGreen</h1>
+    <h1 style="background-color:Gray;">Gray</h1>
+    <h1 style="background-color:SlateBlue;">SlateBlue</h1>
+    <h1 style="background-color:Violet;">Violet</h1>
+    <h1 style="background-color:LightGray;">LightGray</h1>
+  </body>
+</html>
+```
+
+## **Nirxên RGB:**
+
+Nirxa rengê RGB çavkaniyên ronahiya SOR, KESK û ŞÎN temsîl dike.
+
+Di CSS'ê de, rengek dikare wekî nirxek RGB were destnîşankirin, bi karanîna vê formula:
+
+**rgb ( sor, kesk , şîn )**
+
+Her parametre (sor, kesk û şîn) tundiya rengê di navbera **0 û 255** de diyar dike.
+
+Mînakî, **rgb(255, 0, 0)** wekî **sor** tê xuyang kirin, ji ber ku sor bi nirxa xwe ya herî bilind (255) ve hatî danîn û yên din jî **0** têne danîn.
+
+Ji bo nîşandana **reş**, hemî pîvanên rengan li ser 0-ê bicîh bikin, bi vî rengî: **rgb(0, 0, 0)**.
+
+Ji bo nîşandana **spî**, hemî pîvanên rengan li ser 255-ê bicîh bikin, bi vî rengî: **rgb (255, 255, 255)**.
+
+```html copy showLineNumbers
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2 style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h2>
+    <h2 style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h2>
+    <h2 style="background-color:rgb(60, 179, 113);">rgb(60, 179, 113)</h2>
+    <h2 style="background-color:rgb(238, 130, 238);">rgb(238, 130, 238)</h2>
+    <h2 style="background-color:rgb(255, 165, 0);">rgb(255, 165, 0)</h2>
+    <h2 style="background-color:rgb(106, 90, 205);">rgb(106, 90, 205)</h2>
+  </body>
+</html>
+```
+
+## **Nirxên HEX:**
+
+Rengek **hexadecimal** bi: **#RRGGBB** tê destnîşan kirin, ku **RR (sor)**, **GG (kesk)** û **BB (şîn)** hejmarên hexadecimal pêkhateyên rengan diyar dikin.
+
+Di CSS de, rengek dikare bi karanîna nirxek hexadecimal di formê de were destnîşan kirin:
+
+**#rrggbb**
+
+Li ku derê **rr (sor), gg (kesk) û bb (şîn)** nirxên hexadecimal di navbera **00** û **ff** de ne.
+
+Mînakî, **#ff0000** wekî **sor** tê xuyang kirin, ji ber ku sor li ser nirxa xwe ya herî bilind (ff) û yên din li ser nirxa herî nizm (00) hatî danîn.
+
+Ji bo nîşandana **reş**, hemî nirxan li ser 00-ê bicîh bikin, wekî vê yekê: **#000000**.
+
+Ji bo xuyangkirina **spî**, hemî nirxan li ser ff saz bikin, bi vî rengî: **#ffffff**.
+
+```html copy showLineNumbers
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2 style="background-color:#ff0000;">#ff0000</h2>
+    <h2 style="background-color:#0000ff;">#0000ff</h2>
+    <h2 style="background-color:#3cb371;">#3cb371</h2>
+    <h2 style="background-color:#ee82ee;">#ee82ee</h2>
+    <h2 style="background-color:#ffa500;">#ffa500</h2>
+    <h2 style="background-color:#6a5acd;">#6a5acd</h2>
+  </body>
+</html>
+```
+
+## **Rengên Nivîsa (color:)**
+
+Hûn dikarin rengê nivîsê bi taybetmendiyê `color` ve destnîşan bikin:
+
+```html copy showLineNumbers
+<style>
+  p {
+    color: black;
+    /* Bi navê reng hate destnîşan kirin. */
+  }
+
+  h1 {
+    color: #000;
+    /* Bi nirxê HEX hate destnîşan kirin. */
+  }
+
+  h2 {
+    color: rgb(0, 0, 0);
+    /* Bi nirxê RGB hate destnîşan kirin. */
+  }
+</style>
+
+<h1>Rêzedersên CSS'ê</h1>
+<h2>Beşa: Rengan</h2>
+<p>Rengên Nivisê</p>
+```
+
+## **Rengên Paşrû (background-color:)**
+
+Hûn dikarin rengê paşîn ji bo hêmanên HTML'ê bi taybetmendiyê `background-color` ve destnîşan bikin:
+
+```html copy showLineNumbers
+<style>
+  p {
+    background-color: orange;
+    /* Bi navê reng hate destnîşan kirin. */
+  }
+
+  h1 {
+    background-color: #00a2ff;
+    /* Bi nirxê HEX hate destnîşan kirin. */
+  }
+
+  h2 {
+    background-color: rgb(0, 180, 39);
+    /* Bi nirxê RGB hate destnîşan kirin. */
+  }
+</style>
+
+<h1>Rêzedersên CSS'ê</h1>
+<h2>Beşa: Rengan</h2>
+<p>Rengên Paşrû</p>
+```
+
+## **Rengên Sînora (border-color:)**
+
+Hûn dikarin rengê sînoran bi taybetmendiyê `border-color` ve destnîşan bikin:
+
+```html copy showLineNumbers
+<style>
+  p {
+    padding: 5px;
+    border: 2px solid;
+
+    border-color: orange;
+    /* Bi navê reng hate destnîşan kirin. */
+  }
+
+  h1 {
+    padding: 5px;
+    border: 2px solid;
+
+    border-color: #00a2ff;
+    /* Bi nirxê HEX hate destnîşan kirin. */
+  }
+
+  h2 {
+    padding: 5px;
+    border: 2px solid;
+
+    border-color: rgb(0, 180, 39);
+    /* Bi nirxê RGB hate destnîşan kirin. */
+  }
+</style>
+
+<h1>Rêzedersên CSS'ê</h1>
+<h2>Beşa: Rengan</h2>
+<p>Rengên Sînora</p>
+```

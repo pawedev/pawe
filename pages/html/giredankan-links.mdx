@@ -1,0 +1,100 @@
+---
+title: "HTML: Girêdankan (Links)"
+---
+
+# **Girêdankan (Links)**
+
+Girêdank, hema hema di hemî rûpelên malperê de têne dîtin.
+
+Girêdank rê dide bikarhêneran ku riya xwe ji rûpelê, rûpelekê din derbas bikin.
+
+Girêdankên HTML hîpergirêdan in.
+
+Hûn dikarin li ser girêdankek pêlê bikin û biçin rûpelek din.
+
+Dema ku hûn mişkê li ser lînkê bixin, nîşana mişkê dê bibe destek piçûk.
+
+Girêdank ne pêwiste ku bi nivîsê be. Girêdankek dikare wêneyek an hêmanek din a HTML'ê be.
+
+Hêmana `<a>` girêdankek diyar dike. Hevoksaziya vê li jêrîn heye:
+
+```html copy showLineNumbers
+<a href="RÊYA GIRÊDANK LI VIR TÊN NIVÎSANDIN">Navê vê Rê</a>
+```
+
+Taybetmendiya herî girîng a hêmanê `<a>` taybetmendîya `href`, ku rêya girêdankê destnîşan dike.
+
+Nivîsa girêdankê ew beşê ye ku dê ji bikarhêneran re xuya bibe.
+
+Bi pêl kirina li ser nivîsa girêdankê, dê bikarhêner bişîne navnîşana URL'ya diyarkirî.
+
+```html copy showLineNumbers
+<a href="https://pawe.dev/html">Rêzedersên HTML'ê</a>
+```
+
+## **Taybetmendîya "target"**
+
+Girêdank, rûpela geroka heyî de were xuyang kirin.
+
+Ji bo guherandina vê, divê hûn ji bo girêdankê armancek din diyar bikin.
+
+Taybetmendîya `target` diyar dike ku, li ku derê rûpela girêdayî vekin.
+
+Taybetmendîya `target` dikare yek ji van nirxên jêrîn hebe:
+
+`_self` : Bingehîn. Rûpelê di heman pencerê ku lê hatiye pêlandin de vedike.
+
+`_blank` : Rûpelê di pencereyek nû de vedike.
+
+`_parent` : Rûpelê di çarçoveya jorîn de vedike.
+
+`_top` : Rûpelê di tevahiya laşê pencereyê de vedike.
+
+```html copy showLineNumbers
+<a href="https://pawe.dev" target="_blank">Destpêkê - PAWE</a> <br />
+<a href="https://pawe.dev/html" target="_self">HTML - PAWE</a> <br />
+<a href="https://pawe.dev/css" target="_parent">CSS - PAWE</a> <br />
+<a href="https://pawe.dev/javascript" target="_top">JavaScript - PAWE</a>
+```
+
+## **Wêneyek bi Girêdank kirin**
+
+Ji bo ku wêneyek wekî girêdankek bikar bînin, tenê hêmana `<img>` ê têxin hundurê hêmana `<a>` yê.
+
+```html copy showLineNumbers
+<a href="https://pawe.dev">
+  <img src="/pawe.png" alt="Logo ya Pawe" width="85" />
+</a>
+```
+
+## **Girêdanka Navnîşanek E-Mail'ê**
+
+Di hundurê taybetmendiyê `href` de bi `mailto:` tên bikaranîn.
+
+Da ku girêdankek çêbikin ku bernameya e-mail'ê bikarhêner vebike (ji bo ku ew e-mailek nû bişînin).
+
+```html copy showLineNumbers
+<a href="mailto:silav@pawe.dev">E-Mail'a Me</a>
+```
+
+## **Taybetmendîya "title"**
+
+Taybetmendîya `title` agahdariya zêde li ser girêdankê diyar dike.
+
+Dema ku nîşana mişk li ser girêdankê digere, pir caran agahdarî wekî nivîsek tê xuyang kirin.
+
+```html copy showLineNumbers
+<a href="https://www.google.com" title="Malperê Google'ê ve biçe">Google</a>
+```
+
+## **Girêdanka Rûpelên Navxweyî (Relative URL)**
+
+Rûpelên ku di nava peldankek ê de an jî pel û rûpelên navxweyî (local) dikarin bi vê awayî girêdank bikin:
+
+```html copy showLineNumbers
+<!--- Rûpelê ku di nava peldankê de cîh digre --->
+<a href="navepeldank/naverupel.html">Sernavê Girêdank</a>
+
+<!--- Rûpelê ku di navxweyî de bin --->
+<a href="naverupel.html">Sernavê Girêdank</a>
+```

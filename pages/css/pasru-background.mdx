@@ -1,0 +1,238 @@
+---
+title: "CSS: Paşrû (Background)"
+---
+
+# **Paşrû (Background)** 
+
+Taybetmendiyên paşîn ên CSS'ê têne bikar anîn ku ji bo hêmanan bandorên paşîn zêde bikin.
+
+Di van beşan de, hûn ê li ser taybetmendiyên paşîn ên CSS yên jêrîn fêr bibin:
+
+- **background-color**
+- **background-image**
+- **background-repeat**
+- **background-attachment**
+- **background-position**
+- **background** _(mulkê kurtenivîsê)_
+
+## **Rengê Paşrûyê (background-color:)** 
+
+Taybetmendî `background-color` rengê paşrûya hêmanekê diyar dike.
+
+```html copy showLineNumbers
+<style>
+  body {
+    background-color: orange;
+  }
+
+  p {
+    background-color: white;
+  }
+
+  h1 {
+    background-color: green;
+  }
+
+  h2 {
+    background-color: red;
+  }
+</style>
+
+<h1>Rêzedersên CSS'ê</h1>
+<h2>Beşa: Paşrû</h2>
+<p>Rengê Paşrû</p>
+```
+
+### **Zelalbûn (opacity:)** 
+
+Taybetmendiya `opacity` nezelaliya/şefafiya hêmanekê diyar dike.
+
+Ew dikare nirxek ji 0.0 - 1.0 bigire.
+
+Nirxa jêrîn, zelaltir e:
+
+```html copy showLineNumbers
+<style>
+  div {
+    background-color: green;
+  }
+
+  div.yek {
+    opacity: 0.1;
+  }
+
+  div.du {
+    opacity: 0.3;
+  }
+
+  div.se {
+    opacity: 0.6;
+  }
+</style>
+
+<h1>Zelalbûn</h1>
+
+<div class="yek">
+  <h1>opacity 0.1</h1>
+</div>
+
+<div class="du">
+  <h1>opacity 0.3</h1>
+</div>
+
+<div class="se">
+  <h1>opacity 0.6</h1>
+</div>
+
+<div>
+  <h1>opacity 1</h1>
+</div>
+```
+
+## **Wêneyê Paşrûyê (background-image:)** 
+
+Taybetmendiya `background-image` wêneyek diyar dike ku wekî paşrûya hêmanek were bikar anîn.
+
+Wêneyên paşrûyê, bi taybetmendiya `background-image:` ve tên destnîşan kirin.
+
+Piştre, bi rêbaza `url('wene.jpg');` ve rêya wêne tên pênase kirin.
+
+Ji hêla standart ve, wêne tê dubare kirin ji ber vê yekê ew tevahiya hêmanê vedigire.
+
+```html copy showLineNumbers
+<style>
+  h1 {
+    background-color: green;
+    color: white;
+  }
+
+  body {
+    background-image: url("/pawe.png");
+  }
+</style>
+
+<h1>Wêneye Paşrûyê</h1>
+```
+
+## **Dubarekirina Wêneya Paşrûyê (background-repeat:)** 
+
+Ji hêla xwerû ve, taybetmendiya `background-image` wêneyek hem asoyî _(horizontal)_ û hem jî stûnî _(vertical)_ dubare dike.
+
+Pêwiste ku hin wêne tenê bi asoyî an stûnî werin dubare kirin, an jî ew ê ecêb xuya bikin.
+
+Em taybetmendiya `background-repeat` bikar tînin da ku dubarekirina wêneya paşrûyê kontrol bikin.
+
+Ji bo bi asoyî dubare kirin nirxa `repeat-x` tên bikaranîn.
+
+```html copy showLineNumbers
+<style>
+  body {
+    background-image: url("/pawe.png");
+    background-repeat: repeat-x;
+    /* Asoyî */
+  }
+</style>
+```
+
+Ji bo bi stûnî dubare kirin nirxa `repeat-y` tên bikaranîn.
+
+```html copy showLineNumbers
+<style>
+  body {
+    background-image: url("/pawe.png");
+    background-repeat: repeat-y;
+    /* Stûnî */
+  }
+</style>
+```
+
+Heger naxwazin ku wêne dubare bike, dikarin nirxa `no-repeat` bikarbînin.
+
+```html copy showLineNumbers
+<style>
+  body {
+    background-image: url("/pawe.png");
+    background-repeat: no-repeat;
+    /* Ne-Dubare */
+  }
+</style>
+```
+
+## **Pozîsyona Paşrûyê (background-position:)** 
+
+Taybetmendiya `background-position` ji bo diyarkirina pozîsyona wêneya paşrûyê tê bikar anîn.
+
+**Çend mînaka nirxên taybetmendiyê:**
+
+- `background-position: center;` Pozîsyona navendî
+- `background-position: left;` Pozîsyona ber bi çepê
+- `background-position: right;` Pozîsyona ber bi rastê
+- `background-position: top;` Pozîsyona ber bi jorê
+- `background-position: bottom;` Pozîsyona ber bi jêrê
+- `background-position: top left;` Pozîsyona him jor him jî çep
+- `background-position: bottom right;` Pozîsyona him jêr him jî rast
+
+```html copy showLineNumbers
+<style>
+  body {
+    background-image: url("/pawe.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+</style>
+```
+
+## **Pêveka Paşrûyê (background-attachment:)** 
+
+Taybetmendiya `background-attachment` diyar dike ka wêneya paşîn divê bigere an were sererast kirin:
+
+Ji bo sererast an zeliqandinê nirxa `fixed` tên bikaranîn.
+
+```html copy showLineNumbers
+<style>
+  body {
+    background-image: url("/pawe.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+  }
+</style>
+```
+
+Ji bo ku wêne bigere nirxa `scroll` tên bikaranîn.
+
+```html copy showLineNumbers
+<style>
+  body {
+    background-image: url("/pawe.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: scroll;
+  }
+</style>
+```
+
+## **Kurtenivîsa Paşrûyê (background:)** 
+
+Ji bo kurtkirina kodê, di heman demê de gengaz e ku hemî taybetmendiyên paşîn di yek taybetmendiyê de diyar bike.
+
+Ji vê re taybetmendiya kurtenivîsê tê gotin.
+
+Li şûna vê kodê:
+
+```css copy showLineNumbers
+body {
+  background-image: url("/pawe.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+```
+
+Hûn dikarin taybetmendiya kurtenivîsê `background:` bikar bînin:
+
+```css copy showLineNumbers
+body {
+  background: url("/pawe.png") no-repeat right top fixed;
+}
+```

@@ -1,0 +1,205 @@
+---
+title: "HTML: Hêmanên Formê (Form Elements)"
+---
+
+# **Hêmanên Formê (Form Elements)**
+
+Ev beş hemî hêmanên formê yên cûda vedibêje.
+
+Hêmana `<form>` dikare yek an jî çend hêmanên formê yên jêrîn pêk bîne:
+
+- **`<input>`**
+- **`<label>`**
+- **`<select>`**
+- **`<textarea>`**
+- **`<button>`**
+- **`<fieldset>`**
+- **`<legend>`**
+- **`<datalist>`**
+- **`<output>`**
+- **`<option>`**
+- **`<optgroup>`**
+
+## **Hêmana `<input>`**
+
+Yek ji hêmanên formê yên ku herî zêde tê bikar anîn hêmana `<input>` e.
+
+Hêmana `<input>` dikare li gorî taybetmendiyê bi çend awayan were xuyang kirin.
+
+```html copy showLineNumbers
+<form>
+  <label>Navê te:</label>
+  <input type="text" name="nav" />
+</form>
+```
+
+Hemî nirxên cûda yên taybetmendiyê `type` di beşa pêş de têne vegirtin.
+
+## **Hêmana `<label>`**
+
+Hêmana `<label>` ji bo çend hêmanên formê etîketekê diyar dike.
+
+Di heman demê de hêmana `<label>` ji bikarhênerên ku di klîkkirina deverên pir piçûk de dijwar in (wekî butonên radyoyê an qutiyên kontrolê) alîkariya wan dike.
+
+Ji ber ku dema ku bikarhêner nivîsa di hundurê hêmana `<label>` de bitikîne, ew butona radyoyê/qutiya kontrolê vedike.
+
+Divê taybetmendiya `for` a hêmana `<label>` 'ê û bi taybetmendiya `id` ya hêmana `<input>` wekhev be da ku wan bi hev ve girêde.
+
+```html copy showLineNumbers
+<form>
+  <label for="pasnav">Paşnav:</label>
+  <input type="text" id="pasnav" />
+</form>
+```
+
+## **Hêmana `<select>`**
+
+Hêmana `<select>` navnîşek dakêşan diyar dike:
+
+```html copy showLineNumbers
+<form>
+  <label for="bajaran">Bajarê xwe hilbijêre:</label>
+  <select id="bajaran" name="bajar">
+    <option value="amed">Amed</option>
+    <option value="hewler">Hewlêr</option>
+    <option value="mahabad">Mahabad</option>
+    <option value="qamislo">Qamişlo</option>
+  </select>
+</form>
+```
+
+Hêmana `<option>` vebijarkek ku dikare were hilbijartin diyar dike.
+
+Bi standardî, di navnîşa dakêşanê de yekem tişt tê hilbijartin.
+
+Ji bo danasîna vebijarkek pêş-hilbijartî, taybetmendiyê `selected` li vebijarkê destnîşan bikin.
+
+Mînaka jêrîn de vebiraje ya **"Mahabad"** bi taybetmendiyê `selected` ve hate hilbijartin.
+
+```html copy showLineNumbers
+<form>
+  <label for="bajaran">Bajarê xwe hilbijêre:</label>
+  <select id="bajaran" name="bajar">
+    <option value="amed">Amed</option>
+    <option value="hewler">Hewlêr</option>
+    <option value="mahabad" selected>Mahabad</option>
+    <option value="qamislo">Qamişlo</option>
+  </select>
+</form>
+```
+
+Taybetmendiyê `size` bikar bînin da ku hejmara nirxên xuyayî diyar bikin:
+
+```html copy showLineNumbers
+<form>
+  <label for="bajaran">Bajarê xwe hilbijêre:</label>
+  <select id="bajaran" name="bajar" size="3">
+    <option value="amed">Amed</option>
+    <option value="hewler">Hewlêr</option>
+    <option value="mahabad">Mahabad</option>
+    <option value="qamislo">Qamişlo</option>
+  </select>
+</form>
+```
+
+Taybetmendiyê `multiple` bikar bînin da ku bihêle bikarhêner ji yek nirxê zêdetir hilbijêre:
+
+```html copy showLineNumbers
+<form>
+  <label for="bajaran">Bajarê xwe hilbijêre:</label>
+  <select id="bajaran" name="bajar" size="4" multiple>
+    <option value="amed">Amed</option>
+    <option value="hewler">Hewlêr</option>
+    <option value="mahabad">Mahabad</option>
+    <option value="qamislo">Qamişlo</option>
+  </select>
+</form>
+```
+
+## **Hêmana `<textarea>`**
+
+Hêmana `<textarea>` qadeke têketina pir-xêz (qada nivîsê) diyar dike:
+
+```html copy showLineNumbers
+<form>
+  <label for="navnisan">Navnîşan:</label><br />
+  <textarea id="navnisan"></textarea>
+</form>
+```
+
+Taybetmendiya `rows` di nav deverek nivîsê de jimareya xuyang a rêzan diyar dike.
+
+Taybetmendî `cols` firehiya xuya ya deverek nivîsê diyar dike.
+
+Her weha hûn dikarin bi karanîna CSS'ê mezinahiya qada nivîsê diyar bikin:
+
+```html copy showLineNumbers
+<form>
+  <label for="navnisan">Navnîşan:</label><br />
+  <textarea
+    id="navnisan"
+    cols="30"
+    rows="10"
+    style="width:200px; height:200px;"
+  ></textarea>
+</form>
+```
+
+## **Hêmana `<button>`**
+
+Hêmana `<button>` butonek bitikîne diyar dike:
+
+```html copy showLineNumbers
+<form>
+  <button type="button">Têkeve</button>
+</form>
+```
+
+## **Hêmanên `<fieldset>` û `<legend>`**
+
+Hêmana `<fieldset>` ji bo komkirina daneyên têkildar di formek de tê bikar anîn.
+
+Hêmana `<legend>` ji bo hêmanê `<fieldset>` sernavekê diyar dike.
+
+```html copy showLineNumbers
+<form>
+  <fieldset>
+    <legend>Beşdar Bibe</legend>
+
+    <label for="nav">Nav:</label><br />
+    <input type="text" name="nav" id="nav" /><br />
+
+    <label for="pasnav">Paşnav:</label><br />
+    <input type="text" name="pasnav" id="pasnav" /><br />
+
+    <label for="email">Navnîşana E-Mail'ê:</label><br />
+    <input type="text" name="email" id="email" /><br />
+
+    <label for="sifre">Şîfre:</label><br />
+    <input type="text" name="sifre" id="sifre" /><br /><br />
+
+    <button type="button">Bişîne</button>
+  </fieldset>
+</form>
+```
+
+## **Hêmana `<datalist>`**
+
+Hêmana `<datalist>` navnîşek vebijarkên pêş-dîyarkirî ji bo hêmanekê `<input>` diyar dike.
+
+Bikarhêner dema ku daneyan têxe navnîşek dakêşanê ya vebijarkên pêşwextkirî dibînin.
+
+Taybetmendiya `list` a hêmanê `<input>`, divê bi taybetmendiya `id` ya hêmanê `<datalist>` ve vegere.
+
+```html copy showLineNumbers
+<form>
+  <input list="rengan" />
+  <datalist id="rengan">
+    <option value="Kesk"></option>
+    <option value="Sor"></option>
+    <option value="Zer"></option>
+    <option value="Şîn"></option>
+    <option value="Spî"></option>
+  </datalist>
+</form>
+```

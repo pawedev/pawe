@@ -1,0 +1,395 @@
+---
+title: "HTML: Cureyên Input'ê (Input Types)"
+---
+
+# **Cureyên Input'ê (Input Types)**
+
+Ev beş ji bo hêmana `<input>` 'ê cureyên cûda vedibêje.
+
+Li vir cureyên cûda yên têketinê hene ku hûn dikarin di HTMLê de bikar bînin.
+
+- `<input type="button">`
+- `<input type="checkbox">`
+- `<input type="color">`
+- `<input type="date">`
+- `<input type="datetime-local">`
+- `<input type="email">`
+- `<input type="file">`
+- `<input type="hidden">`
+- `<input type="image">`
+- `<input type="month">`
+- `<input type="number">`
+- `<input type="password">`
+- `<input type="radio">`
+- `<input type="range">`
+- `<input type="reset">`
+- `<input type="search">`
+- `<input type="submit">`
+- `<input type="tel">`
+- `<input type="text">`
+- `<input type="time">`
+- `<input type="url">`
+- `<input type="week">`
+
+**Nîşe: Nirxa standart ya taybetmendiyê type'ê "text" e.**
+
+## **Cureya "text"**
+
+`<input type="text">` zeviyek têketina nivîsê ya yek-xêz diyar dike:
+
+```html copy showLineNumbers
+<form action="/form-control.php">
+  <label for="fnav">Nav:</label><br />
+  <input type="text" id="fnav" name="nav" /><br />
+  <button type="submit">Bişîne</button>
+</form>
+```
+
+##  **Cureya "email"**
+
+`<input type="email">` bo qadên têketinê yên ku divê navnîşana e-mailê hebin tê bikar anîn.
+
+Bi piştgiriya gerokê ve girêdayî, dema ku were şandin navnîşana e-mailê bixweber were pejirandin.
+
+Hin cureyên telefonan e-mailê nas dikin, û ".com" li klavyeyê zêde dikin da ku têketina e-mailê li hev bikin.
+
+```html copy showLineNumbers
+<form action="/form-control.php">
+  <label for="email">Navnîşana xwe ya E-mail'ê binivîsin:</label><br />
+  <input type="email" id="email" name="emailamin" /><br />
+  <button type="submit">Bişîne</button>
+</form>
+```
+
+## **Cureya "password"**
+
+`<input type="password">` qadeke şîfreyê diyar dike.
+
+Karakterên di qadeke şîfreyê de têne maske kirin (wek stêrk an derdor têne xuyang kirin).
+
+```html copy showLineNumbers
+<form action="/form-control.php">
+  <label for="fsifre">Şîfre:</label><br />
+  <input type="password" id="fsifre" name="sifre" /><br />
+  <button type="submit">Bişîne</button>
+</form>
+```
+
+## **Cureya "radio"**
+
+`<input type="radio">` butona radyoyê diyar dike.
+
+Butonên radyoyê dihêlin ku bikarhêner ji hejmarek vebijarkan TENÊ YEK hilbijêrin:
+
+```html copy showLineNumbers
+<form action="/form-control.php">
+  <input type="radio" id="html" name="perwerde" value="HTML" />
+  <label for="html">HTML</label><br />
+
+  <input type="radio" id="css" name="perwerde" value="CSS" />
+  <label for="css">CSS</label><br />
+
+  <input type="radio" id="javascript" name="perwerde" value="JavaScript" />
+  <label for="javascript">JavaScript</label><br />
+
+  <button type="submit">Bişîne</button>
+</form>
+```
+
+## **Cureya "checkbox"**
+
+`<input type="checkbox">` qutiyek kontrolê diyar dike.
+
+Qutikên kontrolê dihêle ku bikarhênerek vebijarkên sifir an zêdetir vebijarkên hejmarek vebijarkan hilbijêrin.
+
+```html copy showLineNumbers
+<form action="/form-control.php">
+  <input type="checkbox" id="html" name="perwerde1" value="HTML" />
+  <label for="html">HTML</label><br />
+
+  <input type="checkbox" id="css" name="perwerde2" value="CSS" />
+  <label for="css">CSS</label><br />
+
+  <input type="checkbox" id="javascript" name="perwerde3" value="JavaScript" />
+  <label for="javascript">JavaScript</label><br />
+
+  <button type="submit">Bişîne</button>
+</form>
+```
+
+## **Cureya "button"**
+
+`<input type="button">` butonek diyar dike:
+
+```html copy showLineNumbers
+<form>
+  <input type="button" value="Ev Buton e" />
+</form>
+```
+
+##  **Cureya "submit"**
+
+`<input type="submit">` butonek ji bo şandina daneya formê ji kargêrek formê re diyar dike.
+
+Rêvebirê formê bi gelemperî rûpelek rajedarê _(server)_ ye ku bi skrîptek ji bo hilanîna daneya têketinê heye.
+
+Rêvebirê formê di taybetmendiya formê de `action` tête diyar kirin:
+
+```html copy showLineNumbers
+<form action="/form-control.php">
+  <label for="navnis">Navnîşana E-Mail'ê:</label><br />
+  <input type="email" id="navnis" name="email" /><br />
+
+  <label for="sifre">Şîfre:</label><br />
+  <input type="password" id="sifre" name="password" /><br /><br />
+
+  <input type="submit" value="Bişîne" />
+</form>
+```
+
+## **Cureya "reset"**
+
+`<input type="reset">` butonek vesazkirinê diyar dike ku dê hemî nirxên formê li nirxên xweya standart vegerîne:
+
+```html copy showLineNumbers
+<form action="/form-control.php">
+  <label for="navnis">Navnîşana E-Mail'ê:</label><br />
+  <input type="email" id="navnis" name="email" /><br />
+
+  <label for="sifre">Şîfre:</label><br />
+  <input type="password" id="sifre" name="password" /><br /><br />
+
+  <input type="submit" value="Bişîne" />
+  <input type="reset" value="Paqij Bike" />
+</form>
+```
+
+## **Cureya "color"**
+
+`<input type="color">` ji bo qadên têketinê yên ku divê rengek hilbijêrin tê bikar anîn.
+
+Bi piştgiriya gerokê ve girêdayî, hilbijêrek reng dikare di qada têketinê de nîşan bide.
+
+```html copy showLineNumbers
+<form action="/form-control.php">
+  <label for="freng">Rengek Hilbijêre:</label><br />
+  <input type="color" id="freng" name="reng" /><br />
+
+  <button type="submit">Bişîne</button>
+</form>
+```
+
+## **Cureya "date"**
+
+`<input type="date">` ji bo qadên têketinê yên ku divê dîrokek bin tê bikar anîn.
+
+Bi piştgiriya gerokê ve girêdayî, hilbijêrek dîrok dikare di qada têketinê de xuya bibe.
+
+```html copy showLineNumbers
+<form action="/form-control.php">
+  <label for="dirok">Dîroka Rojbûna Te:</label><br />
+  <input type="date" id="dirok" name="rojbun" /><br />
+
+  <button type="submit">Bişîne</button>
+</form>
+```
+
+Her weha hûn dikarin taybetmendiyan `min` û `max` bikar bînin da ku sînoran li ser dîrokan zêde bikin:
+
+```html copy showLineNumbers
+<form action="/form-control.php">
+  <label for="dirok">Dîrokek berîya 1980-01-01 destnîşan bikin:</label>
+  <input type="date" id="dirok" name="dirokmax" max="1979-12-31" /><br /><br />
+
+  <label for="dirokmin">Dîrokek berîya 2000-01-01 destnîşan bikin:</label>
+  <input type="date" id="dirokmin" name="dirok" min="2000-01-02" /><br />
+
+  <button type="submit">Bişîne</button>
+</form>
+```
+
+## **Cureya "datetime-local"**
+
+`<input type="datetime-local">` têketina dîrok û demjimêrê diyar dike.
+
+Bi piştgiriya gerokê ve girêdayî, hilbijêrek dîrok û demjimêr dikare di qada têketinê de xuya bibe.
+
+```html copy showLineNumbers
+<form action="/form-control.php">
+  <label for="dirokdemjimer">Hûn kengî werin? (dîrok û demjimêr):</label><br />
+  <input type="datetime-local" id="dirokdemjimer" name="ezwerim" /><br />
+
+  <button type="submit">Bişîne</button>
+</form>
+```
+
+##  **Cureya "month"**
+
+`<input type="month">` destûrê dide bikarhêner ku meh û salek hilbijêrin.
+
+Bi piştgiriya gerokê ve girêdayî, hilbijêrek dîrok dikare di qada têketinê de xuya bibe.
+
+```html copy showLineNumbers
+<form action="/form-control.php">
+  <label for="meh">Meh û Sala Newroz'a Pêşî Hilbijêre:</label><br />
+  <input type="month" id="meh" name="newroz" /><br />
+
+  <button type="submit">Bişîne</button>
+</form>
+```
+
+##  **Cureya "week"**
+
+`<input type="week">` destûrê dide bikarhêner ku hefteyek û salek hilbijêrin.
+
+Bi piştgiriya gerokê ve girêdayî, hilbijêrek dîrok dikare di qada têketinê de xuya bibe.
+
+```html copy showLineNumbers
+<form action="/form-control.php">
+  <label for="hefte">Kîjan Hefte?:</label><br />
+  <input type="week" id="hefte" name="hefte" /><br />
+
+  <button type="submit">Bişîne</button>
+</form>
+```
+
+##  **Cureya "time"**
+
+`<input type="time">` bikarhêner destûrê dide ku demjimêrek hilbijêrin.
+
+Bi piştgiriya gerokê ve girêdayî, hilbijêrek demê dikare di qada têketinê de xuya bibe.
+
+```html copy showLineNumbers
+<form action="/form-control.php">
+  <label for="demjimer">Demjimêr Hilbijêre:</label><br />
+  <input type="time" id="demjimer" name="demjimer" /><br />
+
+  <button type="submit">Bişîne</button>
+</form>
+```
+
+## **Cureya "image"**
+
+`<input type="image">` wêneyek wekî butonek şandinê destnîşan dike.
+
+Riya wêneyê di taybetmendiyê `src` de tê diyar kirin.
+
+```html copy showLineNumbers
+<form>
+  <input type="image" src="/pawe.png" alt="Bişîne" width="48" />
+</form>
+```
+
+## **Cureya "file"**
+
+`<input type="file">` ji bo barkirina pelan qadek hilbijartî û butonek **"Bigere / Browse"** diyar dike.
+
+```html copy showLineNumbers
+<form>
+  <label for="pel">Pela xwe hilbijêrin:</label>
+  <input type="file" id="pel" name="pela-min" />
+</form>
+```
+
+## **Cureya "hidden"**
+
+`<input type="hidden">` qadek têketinê ya veşartî diyar dike _(ji bikarhênerek re nayê dîtin)_.
+
+Qadek veşartî dihêle ku pêşvebirên malperê daneyên ku dema ku formek tê şandin ji hêla bikarhêneran ve neyên dîtin an guhertin.
+
+Qadek veşartî bi gelemperî çi tomarên danegeh _(database)_ yên ku dema ku form tê şandin divê were nûve kirin hilîne.
+
+**Nîşe:** Dema ku nirx di naveroka rûpelê de ji bikarhêner re nayê xuyang kirin, ew bi karanîna amûrên pêşdebirker ên gerokê an fonksiyona **"Nêrîna Çavkaniyê"** tê xuyang kirin (û dikare were sererast kirin). Têketinên veşartî wekî rengek ewlehiyê bikar neynin!
+
+```html copy showLineNumbers
+<form action="/form-control.php">
+  <label for="nav">Navê min:</label>
+  <input type="text" id="nav" name="nave-min" /><br /><br />
+  <input type="hidden" name="id" value="2103" />
+  <input type="submit" value="Nûve bike" />
+</form>
+```
+
+## **Cureya "number"**
+
+`<input type="number">` qada têketina jimareyî diyar dike.
+
+Her weha hûn dikarin li ser kîjan jimareyan têne qebûl kirin sînordar bikin.
+
+Mînaka jêrîn qadek têketina hejmarî nîşan dide, ku hûn dikarin nirxek ji 1 heta 5 binivîsin:
+
+```html copy showLineNumbers
+<form action="/form-control.php">
+  <label for="hejmar">Hejmar (Di navbera 1 û 5):</label><br />
+  <input type="number" id="hejmar" name="hejmar" min="1" max="5" /><br />
+
+  <button type="submit">Bişîne</button>
+</form>
+```
+
+## **Cureya "range"**
+
+`<input type="range">` kontrolek ji bo têketina hejmarek ku nirxa tam ne girîng e _(wek kontrolek slider)_ destnîşan dike.
+
+Kontrola hejmaran ji 0 heta 100 e.
+
+Lêbelê, hûn dikarin li ser kîjan jimareyan bi taybetmendiyan `min`, `max`, û `step` ve têne pejirandin sînordar bikin:
+
+```html copy showLineNumbers
+<form action="/form-control.php">
+  <label for="deng">Dengê Stranê:</label><br />
+  <input
+    type="range"
+    id="deng"
+    name="deng"
+    min="0"
+    max="100"
+    value="30"
+  /><br />
+
+  <button type="submit">Bişîne</button>
+</form>
+```
+
+## **Cureya "search"**
+
+`<input type="search">` ji bo qadên lêgerînê tê bikar anîn.
+
+```html copy showLineNumbers
+<form action="/form-control.php">
+  <label for="legerin">Lê bigere:</label><br />
+  <input type="search" id="legerin" name="legerin" /><br />
+
+  <button type="submit">Bişîne</button>
+</form>
+```
+
+## **Cureya "tel"**
+
+`<input type="tel">` ji bo qadên têketina ku divê jimareyek têlefonê hebe tê bikar anîn.
+
+```html copy showLineNumbers
+<form action="/form-control.php">
+  <label for="telefon">Jımareya Telefonê:</label><br />
+  <input type="tel" id="telefon" name="telefon" /><br />
+
+  <button type="submit">Bişîne</button>
+</form>
+```
+
+## **Cureya "url"**
+
+`<input type="url">` ji bo qadên têketina ku divê navnîşana URL-ê hebe tê bikar anîn.
+
+Bi piştgiriya gerokê ve girêdayî, dema ku were şandin qada url dikare bixweber were pejirandin.
+
+Hin têlefon url-ê nas dikin, û ".com" li klavyeyê zêde dikin da ku têketina url-ê li hev bikin.
+
+```html copy showLineNumbers
+<form action="/form-control.php">
+  <label for="malper">Malpera we ya Web'ê:</label><br />
+  <input type="url" id="malper" name="malper" /><br />
+
+  <button type="submit">Bişîne</button>
+</form>
+```

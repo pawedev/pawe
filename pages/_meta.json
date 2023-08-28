@@ -1,0 +1,57 @@
+{
+  "html": {
+    "title": "HTML",
+    "type": "page"
+  },
+  "css": {
+    "title": "CSS",
+    "type": "page"
+  },
+  "javascript": {
+    "title": "JavaScript",
+    "type": "page"
+  },
+  "git": {
+    "title": "Git",
+    "type": "page"
+  },
+  "typescript": {
+    "title": "TypeScript",
+    "type": "page"
+  },
+  "php": {
+    "title": "PHP",
+    "type": "page"
+  },
+  "python": {
+    "title": "Python",
+    "type": "page"
+  },
+
+
+  "index": {
+    "title": "Sereke",
+    "display": "hidden",
+    "theme": {
+      "breadcrumb": false,
+      "footer": true,
+      "sidebar": false,
+      "toc": false,
+      "pagination": false
+    }
+  },
+  
+  "peyvnasi": {
+    "title": "Peyvnasî",
+    "type": "page",
+    "display": "hidden",
+    "theme": {
+      "layout": "full",
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": false,
+      "toc": false,
+      "pagination": false
+    }
+  }
+}

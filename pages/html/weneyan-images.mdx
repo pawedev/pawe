@@ -1,0 +1,65 @@
+---
+title: "HTML: Wêneyan (Images)"
+---
+
+# **Wêneyan (Images)**
+
+Wêne dikarin sêwiran û xuyangiya rûpelek malperê baştir bikin.
+
+Hêmana `<img>` ê tê bikar anîn ku wêneyek di rûpelek malperê de were bi cîh kirin.
+
+Wêne bi rûpelên malperê ve têne girêdan.
+
+`<img>` ji bo wêneya referanskirî cîhek hilgirtinê diafirîne.
+
+Hêmana `<img>` vala ye, tenê taybetmendiyan dihewîne û nîşanka girtinê nîne.
+
+**Rast:** `<img src="wene.jpg">` - **ŞAŞ:** `<img src="wene.jpg"></img>`
+
+Hêmana `<img>` du taybetmendiyên pêwîst hene:
+
+`src` - Rêya wêneyê diyar dike.
+
+`alt` - Ji bo wêneyê nivîsek alternatîf diyar dike.
+
+**Hevoksazîya Hêmana `<img>`:**
+
+```html copy showLineNumbers
+<img src="peldank/navewene.jpg" alt="Nivîsa Alternatîf" />
+```
+
+## **Taybetmendiya "src"**
+
+Taybetmendiya `src` rêya (URL) wêneyê diyar dike.
+
+Dikarin him wêneyên navxweyî him jî wêneyên malperên din de hatiye barkirî diyar bikin.
+
+```html copy showLineNumbers
+<!--- Wêneya Navxweyî --->
+<img src="/pawe.png" width="80" />
+
+<br />
+
+<!--- Wêneya malperê din de hate barkirî --->
+<img src="https://picsum.photos/200/300.jpg" width="200" />
+```
+
+## **Taybetmendiya "alt"**
+
+Taybetmendiya `alt` ji bo wêneyek nivîsek alternatîf peyda dike.
+
+Heger bikarhêner ji ber hin sedeman nikaribe wê bibîne (ji ber girêdana hêdî, xeletiyek di taybetmendiya src de).
+
+Nirxa taybetmendiyê `alt` divê wêneyê diyar bike:
+
+```html copy showLineNumbers
+<img src="https://picsum.photos/500/500.jpga" alt="Ev nivîsa alternatîf e." />
+```
+
+## **Taybetmendiyên "width" û "height"**
+
+Hûn dikarin taybetmendiyên `width` û `height` bikar bînin da ku firehî û bilindahiya wêneyek diyar bikin.
+
+```html copy showLineNumbers
+<img src="https://picsum.photos/500/500.jpg" width="500" height="500" />
+```

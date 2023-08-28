@@ -1,0 +1,170 @@
+---
+title: "HTML: Plansaziya Rûpelê (Layouts)"
+---
+
+# **Plansaziya Rûpelê (Layouts)**
+
+Malper bi gelemperî naverokê di gelek stûnan de (wek kovar an rojnameyek) nîşan didin.
+
+Çend hêmanên HTML'ê semantîk hene ku beşên cûda yên rûpelek malperê diyar dikin:
+
+![](/images/hemane-semantik.gif)
+
+- `<header>` : Sernivîsek ji bo belgeyek an beşê diyar dike
+- `<nav>` : Komek girêdanên navîgasyonê (menu) diyar dike
+- `<section>` : Di belgeyekê de beşê diyar dike
+- `<article>` : Naverokek serbixwe, xweser diyar dike
+- `<aside>` : Naveroka ji bilî naverokê diyar dike (mîna kêlekek)
+- `<footer>` : Ji bo belgeyek an beşek pêvekek û beşa jêrîn diyar dike
+- `<details>` : Hûrguliyên din ên ku bikarhêner dikare li gorî daxwazê ​​veke û bigire diyar dike
+- `<summary>` : Sernavek ji bo hêmanê `<details>` diyar dike
+
+## **Hêmanên Semantîk çi ne?**
+
+Hêmanên Semantîkî bi zelalî wateya xwe hem ji gerok û hem jî ji pêşvebir re diyar dike.
+
+**Hêmanên semantîk = hêmanên bi wate.**
+
+**Mînakên hêmanên ne-wateyî:** `<div>` û `<span>` - Li ser naveroka xwe tiştek nabêje.
+
+**Mînakên hêmanên semantîk:** `<form>`, `<table>` û `<article>` - Bi zelalî naveroka wê diyar dike.
+
+## **Hêmana `<section>`**
+
+Hêmana `<section>` di belgeyekê de beşê diyar dike.
+
+Rûpelek malperek bi gelemperî dikare di beşan de ji bo danasînê, naverok û agahdariya têkiliyê were dabeş kirin.
+
+```html copy showLineNumbers
+<section>
+  <h1>Nûçeyên Teknolojîyê</h1>
+  <p>Li vir naverok cîh digre.</p>
+</section>
+
+<section>
+  <h1>Nûçeyên Welat</h1>
+  <p>Li vir naverok cîh digre.</p>
+</section>
+```
+
+## **Hêmana `<article>`**
+
+Hêmana `<article>` naveroka serbixwe û xweser diyar dike.
+
+Pêdivî ye ku gotarek bi serê xwe watedar û ji malpera mayî serbixwe be.
+
+```html copy showLineNumbers
+<article>
+  <h2>Google Chrome çi ye?</h2>
+  <p>Li vir naverok cîh digre.</p>
+</article>
+
+<article>
+  <h2>Mozilla Firefox çi ye?</h2>
+  <p>Li vir naverok cîh digre.</p>
+</article>
+
+<article>
+  <h2>Microsoft Edge çi ye?</h2>
+  <p>Li vir naverok cîh digre.</p>
+</article>
+```
+
+Ma em dikarin pênaseyan bikar bînin da ku biryar bidin ka wan hêmanan çawa hêlîn bikin? **Na, em nikarin!**
+
+Ji ber vê yekê, hûn ê rûpelên HTML'ê yên bi hêmanên ku `<section>` û `<article>` hene, û hêmanên ku `<article>` û `<section>` hene bibînin.
+
+## **Hêmana `<header>`**
+
+Hêmana `<header>` konteynirek ji bo naveroka destpêkê an komek girêdankan temsîl dike.
+
+`<header>` bi gelemperî dihewîne:
+
+- Yek an çend hêmanên sernavê (`<h1>` - `<h6>`)
+- Logo an îkonê
+- Agahdariya nivîskariyê
+
+**Nîşe:** Hûn dikarin di yek rûpelek HTML de çend hêmana `<header>` hebin. Lêbelê, hêmana `<header>` nikare di nav `<footer>`, `<address>` an `<header>` hêmanek din de were danîn.
+
+```html copy showLineNumbers
+<article>
+  <header>
+    <h1>Ehmedê Xanî</h1>
+    <p>Jîyana vê:</p>
+  </header>
+  <p>
+    Di sala 1601e koçî/1650-51ê zayînî de li Bazîdê hate dinê. Navê bavê wî
+    Îlyas, navê diya wî Gulnîgar e.
+  </p>
+</article>
+```
+
+## **Hêmana `<footer>`**
+
+Hêmana `<footer>` ji bo rûpelek an beş pêçekek diyar dike.
+
+`<footer>` bi gelemperî dihewîne:
+
+- Agahdariya nivîskariyê
+- Agahî
+- Copyright
+- Agahiyên têkiliyê
+- Sitemap
+- Vegere girêdanên jorîn
+- Rûpelên têkildar
+
+Hûn dikarin di yek rûpelê de çend hêmana `<footer>` hebin.
+
+```html copy showLineNumbers
+<footer>
+  <p>Çêker: Pawe Pêşvebirin</p>
+  <p><a href="mailto:silav@pawe.dev">silav@pawe.dev</a></p>
+</footer>
+```
+
+## **Hêmana `<nav>`**
+
+Hêmana `<nav>` komek girêdankên navîgasyonê diyar dike.
+
+Bala xwe bidinê ku NE hemî girêdanên rûpelekê divê di hundurê hêmanekê `<nav>` de bin.
+
+Hêmana `<nav>` tenê ji bo blokên sereke yên girêdanên navîgasyonê tête armanc kirin.
+
+```html copy showLineNumbers
+<nav>
+  <a href="/html/">HTML</a> | <a href="/css/">CSS</a> |
+  <a href="/javascript/">JavaScript</a> |
+  <a href="/php/">PHP</a>
+</nav>
+```
+
+## **Hêmana `<aside>`**
+
+Hêmana `<aside>` hin naverokê ji bilî naveroka ku tê de tê danîn diyar dike (mîna kêlekek).
+
+Divê `<aside>` naverok nerasterast bi naveroka derdorê re têkildar be.
+
+```html copy showLineNumbers
+<aside>
+  <h4>Naverok:</h4>
+  <nav>
+    <a href="#1">Sernavê 1.</a>
+    <a href="#2">Sernavê 2.</a>
+    <a href="#3">Sernavê 3.</a>
+    <a href="#4">Sernavê 4.</a>
+  </nav>
+</aside>
+```
+
+## **Hêmanên `<figure>` û `<figcaption>`**
+
+Hêmana `<figure>` naveroka xweser diyar dike, mîna avahî, diagram, wêne, navnîşên kodan, hwd.
+
+Hêmana `<figcaption>` ji bo hêmana `<figure>` sernavek diyar dike.
+
+```html copy showLineNumbers
+<figure>
+  <img src="/pawe.png" alt="Pawe" />
+  <figcaption>Pêşvebirina Nivîsbarîn</figcaption>
+</figure>
+```

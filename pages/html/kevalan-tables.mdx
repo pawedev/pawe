@@ -1,0 +1,106 @@
+---
+title: "HTML: Kevalan (Tables)"
+---
+
+# **Kevalan (Tables)**
+
+Kevalên _\-Tabloyên-_ HTML rê dide pêşvebirên malperê ku daneyan di nav rêz û stûnan de saz bikin.
+
+Kevalek di HTML'ê de ji şaneyên kevalê di hundurê rêz û stûnan de pêk tê.
+
+Keval, bi hêmanên `<table>` û `</table>` ve tên destnîşan kirin.
+
+Rêz û stûnan, bi hêmanên `<tr>` û `</tr>` ve tên destnîşan kirin.
+
+Sernavan, bi hêmanên `<th>` û `</th>` ve tên destnîşan kirin.
+
+Şaneyan, bi hêmanên `<td>` û `</td>` ve tên destnîşan kirin.
+
+Kevalekê hêsan:
+
+```html copy showLineNumbers
+<table>
+  <!--- Qada Rêz / Stûnan --->
+  <tr>
+    <th>Bakûr</th>
+    <th>Başûr</th>
+    <th>Rojhilat</th>
+    <th>Rojava</th>
+  </tr>
+
+  <!--- Qada Şaneyan --->
+  <tr>
+    <td>Amed</td>
+    <td>Hewlêr</td>
+    <td>Mahabad</td>
+    <td>Qamişlo</td>
+  </tr>
+
+  <tr>
+    <td>Dêrsim</td>
+    <td>Silêmanî</td>
+    <td>Ûrmiye</td>
+    <td>Kobanê</td>
+  </tr>
+</table>
+```
+
+## **Rêzên / Stûnên Kevalê `<tr>`**
+
+Her rêza kevalê bi hêmana `<tr>` ve dest pê dike û bi hêmana `</tr>` diqede.
+
+Hûn dikarin bi qasî ku hûn dixwazin di kevalekê de rêzikan çêbikin.
+
+Lê pêwiste hejmara şaneyan jî wek hev bin.
+
+**Nîşe:** Him sernavan `<th>`, him jî şaneyan `<td>` di nava hêmanên `<tr>` û `</tr>` de cîh digre.
+
+```html copy showLineNumbers
+<table>
+  <tr>
+    <td>HTML</td>
+    <td>CSS</td>
+    <td>JavaScript</td>
+  </tr>
+</table>
+```
+
+## **Sernavên Kevalê `<th>`**
+
+Carinan hûn bixwazin ku şaneyên we sernivîs bin.
+
+Di wan rewşan de hêmana `<th>` û `</th>` bikar bînin.
+
+Bi standardî, nivîsa di hêmanan `<th>` de stûr û navend e. Lê hûn dikarin wê bi CSS'ê biguherînin.
+
+```html copy showLineNumbers
+<table>
+  <tr>
+    <th>Sernav 1</th>
+    <th>Sernav 2</th>
+    <th>Sernav 3</th>
+  </tr>
+
+  <tr>
+    <td>Şane 1</td>
+    <td>Şane 2</td>
+    <td>Şane 3</td>
+  </tr>
+</table>
+```
+
+## **Şaneyên Kevalê `<td>`**
+
+Şaneyan, bi hêmanên `<td>` û `</td>` ve tên destnîşan kirin.
+
+Her tiştên ku di navbera `<td>` û `</td>` de cîh digre, ev naveroka şaneya kevalê ne.
+
+```html copy showLineNumbers
+<table>
+  <tr>
+    <td>Kesk</td>
+    <td>Sor</td>
+    <td>Zer</td>
+  </tr>
+</table>
+```

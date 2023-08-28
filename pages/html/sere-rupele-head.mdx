@@ -1,0 +1,117 @@
+---
+title: "HTML: Serê Rûpelê (Head)"
+---
+
+# **Serê Rûpelê (Head)**
+
+Hêmana `<head>` ji bo ev hêmanan konteynir e: `<title>`, `<style>`, `<meta>`, `<link>`, `<script>`, û `<base>`.
+
+Hêmana `<head>` ji bo metadata (daneyên li ser daneyan) konteynir e û di navbera nîşankên `<html>` û `<body>` de tê danîn.
+
+Metadata, daneyên li ser rûpela HTML'ê dihewîne.
+
+Metadata bi gelemperî sernavê rûpelê, koma karakteran, şêwaz, nivîskar, û agahdariya meta din diyar dike.
+
+## **Hêmana `<title>`**
+
+Hêmana `<title>` sernavê rûpelê diyar dike.
+
+Pêwiste ku sernav tenê nivîs be, û ew di barika sernavê ya gerokê de an di tabloya rûpelê de tê xuyang kirin.
+
+Hêmana `<title>` rûpelên HTML'ê de hewce ye.
+
+Naveroka sernavê rûpelê ji bo Xweşbîniya Motora Lêgerînê (SEO) pir girîng e.
+
+Sernavê rûpelê ji hêla algorîtmayên motora lêgerînê ve tê bikar anîn da ku dema ku rûpelan di encamên lêgerînê de navnîş dike biryar bide.
+
+```html copy showLineNumbers
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sernava rûpelê li vir tên nivîsandin.</title>
+  </head>
+
+  <body>
+    Naveroka rûpelê li vir cîh digre.
+  </body>
+</html>
+```
+
+## **Hêmana `<link>`**
+
+Hêmana `<link>` peywendîya di navbera belgeya heyî û çavkaniyek derveyî de diyar dike.
+
+Ev hêman bi piranî ji bo girêdana bi şêwazên derveyî _(CSS)_ ve tê bikar anîn.
+
+```html copy showLineNumbers
+<link rel="stylesheet" href="mystyle.css" />
+```
+
+## **Hêmana `<meta>`**
+
+Hêman `<meta>` bi gelemperî ji bo diyarkirina koma karakteran, danasîna rûpelê, peyvên sereke, nivîskar, û mîhengên xuyanekê tê bikar anîn.
+
+Metadata, dê li ser rûpelê neyê xuyang kirin.
+
+Lê ji hêla gerokan ve _(çawa mirov naverok nîşan dide an rûpelê nûve dike)_, ji hêla motorên lêgerînê _(peyvên sereke)_ û karûbarên din ên malperê ve têne bikar anîn.
+
+**Koma karaktera hatî bikar anîn diyar bike:**
+
+```html copy showLineNumbers
+<meta charset="UTF-8" />
+```
+
+**Peyvên sereke ji bo motorên lêgerînê diyar bikin:**
+
+```html copy showLineNumbers
+<meta name="keywords" content="HTML, CSS, JavaScript" />
+```
+
+**Danasînek malpera xwe ya Web'ê diyar bikin:**
+
+```html copy showLineNumbers
+<meta name="description" content="Rêzedersên HTML'ê" />
+```
+
+**Nivîskarê rûpelekê diyar bike:**
+
+```html copy showLineNumbers
+<meta name="author" content="Bager Merdin" />
+```
+
+**Her 30 çirkeyan (sanîye) belgeyê nûve bikin:**
+
+```html copy showLineNumbers
+<meta http-equiv="refresh" content="30" />
+```
+
+**Sazkirina xuyanekê da ku malpera we li ser hemî cîhazan xweş xuya bike:**
+
+```html copy showLineNumbers
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+```
+
+## **Hêmana `<base>`**
+
+Hêmana `<base>` URL'ya bingehîn û/an hedef ji bo hemî URL'yên têkildar ên di rûpelekê de diyar dike.
+
+Pêdivî `<base>` ye ku nîşanek an `href` an taybetmendiyek armanc hebe, an jî her du jî hebe.
+
+Di belgeyekê de tenê yek hêmanek `<base>` dikare hebe!
+
+```html copy showLineNumbers
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="https://pawe.dev/" target="_blank" />
+  </head>
+
+  <body>
+    <h1>Pawe Pêşvebirin</h1>
+
+    <p><img src="pawe.png" width="80" alt="Logo" /></p>
+
+    <p><a href="html">Rêzedersên HTML'ê</a></p>
+  </body>
+</html>
+```
